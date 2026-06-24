@@ -44,68 +44,124 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Architect"],
-    "@id": "https://wolfblanc.es/#business",
-    "name": "Wolfblanc Architects",
-    "url": "https://wolfblanc.es/",
-    "logo": "https://wolfblanc.es/apple-touch-icon.png",
-    "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
-    "description": "Estudio de arquitectura en Madrid, Barcelona y Marbella. Proyectos residenciales, de hostelería e inversión con metodología nórdica. COAM N.25160, WELL AP.",
-    "email": "info@wolfblanc.com",
-    "telephone": "+34662411064",
-    "address": [
-      {"@type":"PostalAddress","streetAddress":"Calle Hermosilla 48","addressLocality":"Madrid","postalCode":"28001","addressCountry":"ES"},
-      {"@type":"PostalAddress","streetAddress":"Carrer de Pallars 193","addressLocality":"Barcelona","postalCode":"08005","addressCountry":"ES"},
-      {"@type":"PostalAddress","streetAddress":"Oasis Business Centre, Carretera de Cádiz km 176, Oficina 9","addressLocality":"Marbella","postalCode":"29602","addressRegion":"Málaga","addressCountry":"ES"}
-    ],
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.4284,
-      "longitude": -3.6847
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Madrid"},
-      {"@type": "City", "name": "Barcelona"},
-      {"@type": "City", "name": "Marbella"},
-      {"@type": "Place", "name": "Salamanca, Madrid"},
-      {"@type": "Place", "name": "Chamberí, Madrid"},
-      {"@type": "Place", "name": "Retiro, Madrid"},
-      {"@type": "Place", "name": "Costa del Sol"},
-      {"@type": "Place", "name": "Ibiza"},
-      {"@type": "City", "name": "Sevilla"},
-      {"@type": "City", "name": "Valencia"},
-      {"@type": "City", "name": "Palma de Mallorca"}
-    ],
-    "hasCredential": ["COAM N.25160", "WELL AP"],
-    "priceRange": "$$$",
-    "openingHours": ["Mo-Fr 09:00-18:00"],
-    "knowsLanguage": ["es", "en"],
-    "sameAs": [
-      "https://wolfblanc.com",
-      "https://share.google/yypk7LOIBam8uhKrU",
-      "https://share.google/amveCrGaHOV6EizFB",
-      "https://share.google/GO0CKDfXqJpLwGLeu"
-    ],
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=Calle+Hermosilla+48%2C+28001+Madrid",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Servicios de Arquitectura en España",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Arquitectura residencial y reformas"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Licencias de obra y gestión urbanística"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Due diligence técnica y desarrollo inmobiliario"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interiorismo comercial y hostelería"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coordinación BIM y dirección de proyectos"}}
-      ]
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "+34662411064",
-      "email": "info@wolfblanc.com",
-      "areaServed": "ES",
-      "availableLanguage": ["Spanish", "English"]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://wolfblanc.es/#business",
+        "name": "Wolfblanc Architects",
+        "url": "https://wolfblanc.es/",
+        "logo": "https://wolfblanc.es/apple-touch-icon.png",
+        "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
+        "description": "Estudio de arquitectura en Madrid, Barcelona y Marbella. Proyectos residenciales, de hostelería e inversión con metodología nórdica. COAM N.25160, WELL AP.",
+        "email": "info@wolfblanc.com",
+        "telephone": "+34662411064",
+        "knowsLanguage": ["es", "en"],
+        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "sameAs": ["https://wolfblanc.com"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Arquitectura en España",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Arquitectura residencial y reformas"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Licencias de obra y gestión urbanística"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Due diligence técnica y desarrollo inmobiliario"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interiorismo comercial y hostelería"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coordinación BIM y dirección de proyectos"}}
+          ]
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "+34662411064",
+          "email": "info@wolfblanc.com",
+          "areaServed": "ES",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "subOrganization": [
+          {"@id": "https://wolfblanc.es/#madrid"},
+          {"@id": "https://wolfblanc.es/#barcelona"},
+          {"@id": "https://wolfblanc.es/#marbella"}
+        ]
+      },
+      {
+        "@type": ["LocalBusiness", "Architect"],
+        "@id": "https://wolfblanc.es/#madrid",
+        "name": "Wolfblanc Architects Madrid",
+        "url": "https://wolfblanc.es/",
+        "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
+        "description": "Estudio de arquitectura en Madrid. Vivienda, reforma integral, interiorismo e inversión inmobiliaria. COAM N.25160, WELL AP.",
+        "email": "info@wolfblanc.com",
+        "telephone": "+34662411064",
+        "priceRange": "$$$",
+        "openingHours": ["Mo-Fr 09:00-18:00"],
+        "knowsLanguage": ["es", "en"],
+        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "address": {"@type": "PostalAddress", "streetAddress": "Calle Hermosilla 48", "addressLocality": "Madrid", "postalCode": "28001", "addressCountry": "ES"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 40.4259, "longitude": -3.6824},
+        "areaServed": [
+          {"@type": "City", "name": "Madrid"},
+          {"@type": "Place", "name": "Salamanca, Madrid"},
+          {"@type": "Place", "name": "Chamberí, Madrid"},
+          {"@type": "Place", "name": "Retiro, Madrid"},
+          {"@type": "AdministrativeArea", "name": "Comunidad de Madrid"}
+        ],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Calle+Hermosilla+48%2C+28001+Madrid",
+        "sameAs": ["https://share.google/yypk7LOIBam8uhKrU"],
+        "parentOrganization": {"@id": "https://wolfblanc.es/#business"}
+      },
+      {
+        "@type": ["LocalBusiness", "Architect"],
+        "@id": "https://wolfblanc.es/#barcelona",
+        "name": "Wolfblanc Architects Barcelona",
+        "url": "https://wolfblanc.es/",
+        "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
+        "description": "Estudio de arquitectura en Barcelona. Vivienda, reforma, interiorismo y proyectos comerciales y de hostelería. COAM N.25160, WELL AP.",
+        "email": "info@wolfblanc.com",
+        "telephone": "+34662411064",
+        "priceRange": "$$$",
+        "openingHours": ["Mo-Fr 09:00-18:00"],
+        "knowsLanguage": ["es", "en"],
+        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "address": {"@type": "PostalAddress", "streetAddress": "Carrer de Pallars 193", "addressLocality": "Barcelona", "postalCode": "08005", "addressCountry": "ES"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 41.4034, "longitude": 2.1939},
+        "areaServed": [
+          {"@type": "City", "name": "Barcelona"},
+          {"@type": "Place", "name": "Poblenou, Barcelona"},
+          {"@type": "Place", "name": "22@, Barcelona"},
+          {"@type": "Place", "name": "Eixample, Barcelona"},
+          {"@type": "AdministrativeArea", "name": "Catalunya"}
+        ],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Carrer+de+Pallars+193%2C+08005+Barcelona",
+        "sameAs": ["https://share.google/amveCrGaHOV6EizFB"],
+        "parentOrganization": {"@id": "https://wolfblanc.es/#business"}
+      },
+      {
+        "@type": ["LocalBusiness", "Architect"],
+        "@id": "https://wolfblanc.es/#marbella",
+        "name": "Wolfblanc Architects Marbella",
+        "url": "https://wolfblanc.es/",
+        "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
+        "description": "Estudio de arquitectura en Marbella y la Costa del Sol. Villas de lujo, segunda residencia, interiorismo y desarrollo inmobiliario. COAM N.25160, WELL AP.",
+        "email": "info@wolfblanc.com",
+        "telephone": "+34662411064",
+        "priceRange": "$$$",
+        "openingHours": ["Mo-Fr 09:00-18:00"],
+        "knowsLanguage": ["es", "en"],
+        "hasCredential": ["COAM N.25160", "WELL AP"],
+        "address": {"@type": "PostalAddress", "streetAddress": "Oasis Business Centre, Carretera de Cádiz km 176, Oficina 9", "addressLocality": "Marbella", "postalCode": "29602", "addressRegion": "Málaga", "addressCountry": "ES"},
+        "geo": {"@type": "GeoCoordinates", "latitude": 36.4889, "longitude": -4.9523},
+        "areaServed": [
+          {"@type": "City", "name": "Marbella"},
+          {"@type": "Place", "name": "Costa del Sol"},
+          {"@type": "Place", "name": "Puerto Banús"},
+          {"@type": "City", "name": "Estepona"},
+          {"@type": "AdministrativeArea", "name": "Málaga"}
+        ],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Carretera+de+C%C3%A1diz+km+176%2C+29602+Marbella",
+        "sameAs": ["https://share.google/GO0CKDfXqJpLwGLeu"],
+        "parentOrganization": {"@id": "https://wolfblanc.es/#business"}
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
