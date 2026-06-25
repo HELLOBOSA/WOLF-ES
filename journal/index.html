@@ -76,7 +76,7 @@
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
     header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:68vh;display:flex;align-items:center}
-    .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none;will-change:background-position}
+    .hero-grid{--line:rgba(154,104,64,.22);position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none;will-change:background-position}
     .hero-inner{position:relative;max-width:1100px;width:100%;margin:0 auto;padding:100px 48px 80px}
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
     h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;text-transform:uppercase;letter-spacing:.08em;line-height:1.15;margin:0 0 28px;max-width:18ch}
@@ -144,7 +144,7 @@
       .cta-inner{padding-top:80px;padding-bottom:80px}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
     }
-    @media(max-width:768px){.hero-grid{animation:none;will-change:auto}}
+    @media(max-width:768px){}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
     @media(min-width:561px) and (max-width:860px){.grid3{grid-template-columns:1fr 1fr}}
     footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
