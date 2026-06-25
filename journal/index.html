@@ -75,9 +75,9 @@
     .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.25rem;border-bottom:1px solid var(--line);transition:color .3s}
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
-    header{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
-    .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;opacity:.6;pointer-events:none;will-change:background-position}
-    .hero-inner{position:relative;max-width:1100px;margin:0 auto;padding:120px 48px 72px}
+    header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:68vh;display:flex;align-items:center}
+    .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;opacity:.7;pointer-events:none;will-change:background-position}
+    .hero-inner{position:relative;max-width:1100px;width:100%;margin:0 auto;padding:100px 48px 80px}
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
     h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;text-transform:uppercase;letter-spacing:.08em;line-height:1.15;margin:0 0 28px;max-width:18ch}
     .lead{font-size:1.05rem;line-height:1.7;color:var(--text2);max-width:54ch}
@@ -137,7 +137,7 @@
       .burger{display:flex}
       .hero-grid{animation:none;will-change:auto}
       .hero-inner,main,.cta-inner{padding-left:24px;padding-right:24px}
-      .hero-inner{padding-top:80px;padding-bottom:56px}
+      .hero-inner{padding-top:88px;padding-bottom:64px}
       .featured{grid-template-columns:1fr}
       .feat-img{min-height:240px}
       .feat-body{padding:32px 24px}
