@@ -116,6 +116,7 @@
     }
     @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
   </style>
+  <link rel="stylesheet" href="../article-enhancements.css">
 </head>
 <body>
   <nav id="nav">
@@ -303,12 +304,9 @@
     });
   }
 
-  var btt=document.getElementById('btt'),ft=document.querySelector('footer');
+  var btt=document.getElementById('btt');
   if(btt){
-    window.addEventListener('scroll',function(){
-      btt.classList.toggle('visible',window.scrollY>300);
-      if(ft){var r=ft.getBoundingClientRect();btt.style.bottom=r.top<window.innerHeight?(window.innerHeight-r.top+16)+'px':'';}
-    },{passive:true});
+    window.addEventListener('scroll',function(){btt.classList.toggle('visible',window.scrollY>400);},{passive:true});
     btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
   }
 
