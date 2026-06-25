@@ -25,9 +25,6 @@
   ]}
   </script>
   <style>
-    *,::before,::after{box-sizing:border-box;margin:0;padding:0}
-    html{font-size:16px;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-    body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
     :root{--bg:#f5f0eb;--text:#0d0b0a;--text2:#6b6057;--accent:#9a6840;--line:rgba(154,104,64,.14);--nav:rgba(245,240,235,.94)}
     .wb-dark{--bg:#0d0b0a;--text:#f2ede8;--text2:#8a8278;--accent:#c8a882;--line:rgba(200,168,130,.14);--nav:rgba(13,11,10,.94)}
 
@@ -43,57 +40,81 @@
     .burger-btn{display:none;background:none;border:none;cursor:pointer;color:var(--text);align-items:center;justify-content:center;padding:8px;width:40px;height:40px}
     .burger-btn:hover{color:var(--accent)}
     .mob-menu{display:none;border-top:1px solid var(--line);background:var(--nav);backdrop-filter:blur(12px)}
-    .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.1rem;border-bottom:1px solid var(--line);text-decoration:none;transition:color .3s}
+    .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.25rem;border-bottom:1px solid var(--line);transition:color .3s}
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
     .language-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:3px}
     .lang-btn{background:transparent;border:0;color:var(--text2);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 6px;cursor:pointer;transition:color .3s}
     .lang-btn:hover,.lang-btn.active{color:var(--accent)}
-    .theme-btn{background:none;border:none;cursor:pointer;color:var(--text2);display:flex;align-items:center;padding:8px;transition:color .3s}
+    .theme-btn{background:none;border:none;cursor:pointer;color:var(--text2);display:flex;align-items:center;padding:6px;transition:color .3s}
     .theme-btn:hover{color:var(--text)}
-    @media(max-width:860px){.nav-bar{padding:0 1.25rem}.nav-links{display:none}.burger-btn{display:flex}.nav-link{font-size:.54rem;letter-spacing:.1em}}
-    a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
-    .lang-sw button{background:none;border:1px solid var(--line);color:var(--text);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;cursor:pointer;transition:all .2s}
-    .lang-sw button.active{background:var(--accent);border-color:var(--accent);color:#fff}
-    @media(max-width:860px){.wb-nav-links.open{display:flex}.wb-nav-links li{padding:10px 32px}.burger{display:flex}}
-    .art-wrap{max-width:780px;margin:0 auto;padding:104px 32px 80px}
-    .art-header{margin-bottom:40px}
-    .art-cat{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-    .art-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin-bottom:16px}
-    .art-meta{font-size:.78rem;color:var(--text2);display:flex;gap:16px;flex-wrap:wrap}
-    .art-hero{position:relative;aspect-ratio:16/9;overflow:hidden;margin-bottom:48px;border:1px solid var(--line)}
-    .art-hero img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
-    .wb-body{font-size:1.05rem;line-height:1.8;color:var(--text)}
-    .wb-body h2{font-size:1.35rem;font-weight:600;letter-spacing:-.01em;margin:48px 0 16px;line-height:1.25}
-    .wb-body p{margin-bottom:20px;color:var(--text)}
-    .wb-body ul{margin:0 0 20px 20px}.wb-body ul li{margin-bottom:6px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.02em;line-height:1.8;min-height:100vh;transition:background .4s,color .4s}
+    a{text-decoration:none;color:inherit;transition:color .3s}
+    button{font-family:inherit;cursor:pointer}
+    .art-header{max-width:760px;margin:0 auto;padding:88px 32px 48px}
+    .back-link{display:inline-block;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);margin-bottom:40px}
+    .back-link:hover{color:var(--accent)}
+    .art-meta{display:flex;gap:10px;align-items:center;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+    .art-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--accent);opacity:.5}
+    .art-meta .dim{color:var(--text2)}
+    h1{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:200;text-transform:uppercase;letter-spacing:.05em;line-height:1.2;margin:0 0 28px}
+    .art-lead{font-size:1.1rem;line-height:1.65;color:var(--text2);margin:0 0 32px}
+    .art-byline{display:flex;align-items:center;gap:12px;padding-top:24px;border-top:1px solid var(--line)}
+    .byline-avatar{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0}
+    .byline-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+    .byline-text{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2)}
+    .byline-text strong{color:var(--text)}
+    .hero-img{max-width:1100px;margin:0 auto 64px;padding:0 32px}
+    .hero-img-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line)}
+    .hero-img-wrap img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
+    .img-caption{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin:12px 0 0}
+    .wb-body{max-width:680px;margin:0 auto;padding:0 32px 96px;font-size:1rem;line-height:1.85;color:var(--text2)}
+    .wb-body p{margin:0 0 24px}
+    .wb-body p:first-of-type{font-size:1.15rem;line-height:1.7;color:var(--text)}
+    h2.section-h{font-size:1.15rem;font-weight:400;text-transform:uppercase;letter-spacing:.08em;color:var(--text);margin:48px 0 20px}
+    blockquote{margin:48px 0;padding:0 0 0 28px;border-left:2px solid var(--accent)}
+    blockquote p{font-size:1.3rem;font-weight:300;line-height:1.5;color:var(--text);margin:0}
     .inline-img{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line);margin:40px 0}
     .inline-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
-    .wb-blockquote{border-left:3px solid var(--accent);padding:20px 24px;margin:40px 0;background:var(--line);font-style:italic;font-size:1.05rem;color:var(--text2)}
-    .article-faq{margin-top:64px;padding-top:48px;border-top:1px solid var(--line)}
-    .faq-title{font-size:1.2rem;font-weight:600;margin-bottom:32px;letter-spacing:-.01em}
-    .faq-item{border-bottom:1px solid var(--line);padding:20px 0}
-    .faq-q{font-size:.95rem;font-weight:600;margin-bottom:10px}
-    .faq-a{font-size:.93rem;color:var(--text2);line-height:1.7}
-    .cta-section{margin-top:64px;padding:48px 40px;border:1px solid var(--line);text-align:center}
-    .cta-section h2{font-size:1.4rem;font-weight:600;margin-bottom:12px}
-    .cta-section p{color:var(--text2);margin-bottom:28px;font-size:.97rem}
-    .cta-btn{display:inline-block;background:var(--accent);color:#fff;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:14px 36px;border:none;cursor:pointer;transition:opacity .2s}
-    .cta-btn:hover{opacity:.85}
-    .related-section{margin-top:64px;padding-top:48px;border-top:1px solid var(--line)}
-    .related-title{font-size:1rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);margin-bottom:32px}
-    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .rel-card{display:block;border:1px solid var(--line);overflow:hidden;transition:border-color .2s}
-    .rel-card:hover{border-color:var(--accent)}
-    .rel-card-img{aspect-ratio:4/3;overflow:hidden}
-    .rel-card-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
-    .rel-card-body{padding:16px}
-    .rel-card-cat{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
-    .rel-card-title{font-size:.88rem;font-weight:600;line-height:1.3}
-    @media(max-width:600px){.related-grid{grid-template-columns:1fr}}
-    @media(max-width:720px){}
-    @media(max-width:480px){}
+    .cta-section{position:relative;border-top:1px solid var(--line);overflow:hidden}
+    .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
+    .cta-inner{position:relative;max-width:900px;margin:0 auto;padding:104px 32px;text-align:center}
+    .cta-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:24px}
+    .cta-title{font-size:clamp(1.3rem,3vw,2rem);font-weight:200;line-height:1.3;letter-spacing:.04em;text-transform:uppercase;color:var(--text);max-width:22ch;margin:0 auto 44px}
+    .cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
+    .btn-ph{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
+    .btn-ph:hover{background:var(--accent);color:var(--bg)}
+    .btn-em{display:inline-flex;align-items:center;gap:10px;background:var(--text);color:var(--bg);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:opacity .3s}
+    .btn-em:hover{opacity:.85}
+    .btn-ct{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
+    .btn-ct:hover{background:var(--accent);color:var(--bg)}
+    .cta-note{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-top:36px}
+    .related{border-top:1px solid var(--line)}
+    .related-inner{max-width:1100px;margin:0 auto;padding:72px 32px}
+    .rel-ey{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:36px}
+    .rel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .rel-card{display:flex;flex-direction:column;background:var(--bg)}
+    .rel-card:hover .rel-img{transform:scale(1.045)}
+    .rel-img-wrap{position:relative;aspect-ratio:4/3;overflow:hidden}
+    .rel-img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+    .rel-body{padding:22px 22px 26px}
+    .rel-cat{font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .rel-title{font-size:.94rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0}
     footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
+    #btt{position:fixed;bottom:32px;right:32px;width:40px;height:40px;border:1px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;z-index:1000;background:transparent;cursor:pointer;opacity:0;visibility:hidden;transition:all .3s}
+    #btt.visible{opacity:1;visibility:visible}
+    #btt:hover{background:var(--accent);color:var(--bg)}
+    @media(max-width:860px){
+      .nav-bar{padding:0 1.25rem}
+      .nav-links{display:none}
+      .burger-btn{display:flex}
+      .art-header,.hero-img,.wb-body,.cta-inner,.related-inner{padding-left:24px;padding-right:24px}
+      .art-header{padding-top:56px}
+      .rel-grid{grid-template-columns:1fr}
+      footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
+    }
+    @media(min-width:561px) and (max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
@@ -133,18 +154,26 @@
   </div>
 </nav>
   <main>
-    <div class="art-wrap">
-      <header class="art-header">
-        <div class="art-cat" data-es="Inversión & ciudad" data-en="Investment & city">Inversión & ciudad</div>
-        <h1 class="art-title" data-es="Cómo analizar una propiedad antes de comprar en España" data-en="How to analyse a property before buying in Spain">Cómo analizar una propiedad antes de comprar en España</h1>
-        <div class="art-meta">
-          <span data-es="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</span>
-          <span>18 OCT 2026</span>
-        </div>
-      </header>
-      <figure class="art-hero">
-        <img src="../../images/Residential Rehabilitation K38_02.webp" alt="Due diligence técnica inmobiliaria en España, Wolfblanc Architects" loading="eager" fetchpriority="high" decoding="async">
-      </figure>
+  <header class="art-header">
+    <a href="../" class="back-link" data-es="&larr; Journal" data-en="&larr; Journal">&larr; Journal</a>
+    <div class="art-meta">
+      <span data-es="Inversión & ciudad" data-en="Inversión & ciudad">Inversión & ciudad</span>
+      <span class="dot"></span>
+      <span class="dim">18 OCT 2026</span>
+    </div>
+    <h1 data-es="Cómo analizar una propiedad antes de comprar en España" data-en="Cómo analizar una propiedad antes de comprar en España">Cómo analizar una propiedad antes de comprar en España</h1>
+    <p class="art-lead" data-es="Guía de due diligence técnica inmobiliaria: qué analiza un arquitecto antes de comprar, costes ocultos, planeamiento y viabilidad de reforma en España." data-en="Real estate technical due diligence in Spain — what an architect checks, hidden costs and renovation feasibility before you sign. By Wolfblanc Architects.">Guía de due diligence técnica inmobiliaria: qué analiza un arquitecto antes de comprar, costes ocultos, planeamiento y viabilidad de reforma en España.</p>
+    <div class="art-byline">
+      <div class="byline-avatar"><img src="../../images/210 sq_white-02.webp" alt="Wolfblanc Architects" width="34" height="34" loading="lazy" decoding="async"></div>
+      <div class="byline-text"><strong data-es="Wolfblanc Architects" data-en="Wolfblanc Architects">Wolfblanc Architects</strong> &nbsp;/&nbsp; Madrid</div>
+    </div>
+  </header>
+
+  <div class="hero-img">
+    <div class="hero-img-wrap">
+      <img src="../../images/Residential Rehabilitation K38_02.webp" alt="Cómo analizar una propiedad antes de comprar en España" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </div>
       <article class="wb-body" itemscope itemtype="https://schema.org/Article">
         <h2 data-es="Lo que el arquitecto ve que el comprador no ve" data-en="What the architect sees that the buyer does not">Lo que el arquitecto ve que el comprador no ve</h2>
         <p data-es="Cuando un comprador visita un piso o una villa, ve la decoración, la distribución y la iluminación. Un arquitecto ve otra cosa: el estado de la estructura, las humedades ocultas tras el yeso, la instalación eléctrica fuera de norma, la cocina que no tiene salida de humos directa o la distribución que no se puede modificar porque coincide con un pilar maestro." data-en="When a buyer visits a flat or villa, they see the décor, layout and lighting. An architect sees something else: the state of the structure, hidden damp behind the plasterwork, an out-of-code electrical installation, the kitchen without direct flue extraction or the layout that cannot be changed because it aligns with a load-bearing column.">Cuando un comprador visita un piso o una villa, ve la decoración, la distribución y la iluminación. Un arquitecto ve otra cosa: el estado de la estructura, las humedades ocultas tras el yeso, la instalación eléctrica fuera de norma, la cocina que no tiene salida de humos directa o la distribución que no se puede modificar porque coincide con un pilar maestro.</p>
@@ -161,90 +190,135 @@
         <div class="inline-img"><img src="../../images/Residential Rehabilitation K38_01.webp" alt="Análisis técnico de edificio residencial antes de la compra" loading="lazy" decoding="async"></div>
         <blockquote class="wb-blockquote" data-es="La due diligence técnica no es un gasto: es la información que convierte una decisión de compra en una decisión de inversión." data-en="Technical due diligence is not a cost — it is the information that turns a purchase decision into an investment decision.">La due diligence técnica no es un gasto: es la información que convierte una decisión de compra en una decisión de inversión.</blockquote>
       </article>
-      <section class="article-faq" itemscope itemtype="https://schema.org/FAQPage" aria-label="Preguntas frecuentes">
-        <h2 class="faq-title" data-es="Preguntas frecuentes" data-en="Frequently asked questions">Preguntas frecuentes</h2>
-
-        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="faq-q" itemprop="name" data-es="¿Cuánto cuesta un informe de due diligence técnica en Madrid o Barcelona?" data-en="How much does a technical due diligence report cost in Madrid or Barcelona?">¿Cuánto cuesta un informe de due diligence técnica en Madrid o Barcelona?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <span itemprop="text" data-es="Un informe de due diligence técnica para una vivienda de 80-150 m² en Madrid o Barcelona realizado por un arquitecto colegiado tiene un coste de entre 800 y 2.500 €, dependiendo de la complejidad del inmueble y del nivel de detalle requerido. Para edificios completos o propiedades de alta inversión, el informe puede superar los 5.000 €." data-en="A technical due diligence report for an 80–150 m² property in Madrid or Barcelona by a registered architect costs between €800 and €2,500, depending on the property's complexity and the required level of detail. For complete buildings or high-investment properties, the report can exceed €5,000.">Un informe de due diligence técnica para una vivienda de 80-150 m² en Madrid o Barcelona realizado por un arquitecto colegiado tiene un coste de entre 800 y 2.500 €, dependiendo de la complejidad del inmueble y del nivel de detalle requerido. Para edificios completos o propiedades de alta inversión, el informe puede superar los 5.000 €.</span>
-          </div>
-        </div>
-        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="faq-q" itemprop="name" data-es="¿Qué diferencia hay entre una tasación y un informe técnico de arquitecto?" data-en="What is the difference between a valuation and an architect's technical report?">¿Qué diferencia hay entre una tasación y un informe técnico de arquitecto?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <span itemprop="text" data-es="La tasación inmobiliaria determina el valor de mercado del inmueble, pero no analiza en profundidad su estado técnico ni los costes de reforma necesarios. El informe técnico de un arquitecto evalúa la condición física del inmueble, identifica patologías y problemas ocultos, y proporciona una estimación de los costes de reforma necesarios para alcanzar el estándar deseado." data-en="A property valuation determines the market value of the asset but does not deeply analyse its technical condition or necessary renovation costs. An architect's technical report evaluates the physical condition of the property, identifies pathologies and hidden problems, and provides an estimate of renovation costs needed to reach the desired standard.">La tasación inmobiliaria determina el valor de mercado del inmueble, pero no analiza en profundidad su estado técnico ni los costes de reforma necesarios. El informe técnico de un arquitecto evalúa la condición física del inmueble, identifica patologías y problemas ocultos, y proporciona una estimación de los costes de reforma necesarios para alcanzar el estándar deseado.</span>
-          </div>
-        </div>
-        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="faq-q" itemprop="name" data-es="¿Cuándo debo contratar un arquitecto antes de comprar?" data-en="When should I hire an architect before buying?">¿Cuándo debo contratar un arquitecto antes de comprar?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <span itemprop="text" data-es="Es recomendable contratar un arquitecto antes de hacer una oferta formal cuando: la propiedad va a ser objeto de reforma importante, el edificio tiene más de 40 años, la propiedad está en un edificio con protección patrimonial, o el precio de compra más el coste de reforma estimado supera el millón de euros. En propiedades de inversión, la due diligence técnica debe ser siempre un paso previo a la oferta." data-en="It is advisable to hire an architect before making a formal offer when: the property is to undergo significant renovation, the building is over 40 years old, the property is in a heritage-listed building, or the purchase price plus estimated renovation cost exceeds one million euros. For investment properties, technical due diligence should always precede the offer.">Es recomendable contratar un arquitecto antes de hacer una oferta formal cuando: la propiedad va a ser objeto de reforma importante, el edificio tiene más de 40 años, la propiedad está en un edificio con protección patrimonial, o el precio de compra más el coste de reforma estimado supera el millón de euros. En propiedades de inversión, la due diligence técnica debe ser siempre un paso previo a la oferta.</span>
-          </div>
-        </div>
-        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <div class="faq-q" itemprop="name" data-es="¿Puede el arquitecto estimar el coste de reforma antes de la compra?" data-en="Can the architect estimate renovation costs before purchase?">¿Puede el arquitecto estimar el coste de reforma antes de la compra?</div>
-          <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <span itemprop="text" data-es="Sí. Un arquitecto con experiencia en el mercado local puede proporcionar una estimación de coste de reforma con una precisión del ±20-30% a partir de una visita a la propiedad y la revisión de la documentación disponible. Esta estimación es suficiente para tomar la decisión de compra. El proyecto de ejecución, con mediciones detalladas, se realiza después de la adquisición." data-en="Yes. An architect with local market experience can provide a renovation cost estimate with ±20–30% accuracy from a property visit and review of available documentation. This estimate is sufficient to make the purchase decision. The detailed design with precise measurements is produced after acquisition.">Sí. Un arquitecto con experiencia en el mercado local puede proporcionar una estimación de coste de reforma con una precisión del ±20-30% a partir de una visita a la propiedad y la revisión de la documentación disponible. Esta estimación es suficiente para tomar la decisión de compra. El proyecto de ejecución, con mediciones detalladas, se realiza después de la adquisición.</span>
-          </div>
-        </div>
-      </section>
-      <section class="cta-section" aria-label="Contacto">
-        <h2 data-es="¿Tienes un proyecto en mente?" data-en="Do you have a project in mind?">¿Tienes un proyecto en mente?</h2>
-        <p data-es="Cuéntanos tu idea. Nuestro equipo responde en menos de 24 horas." data-en="Tell us your idea. Our team responds within 24 hours.">Cuéntanos tu idea. Nuestro equipo responde en menos de 24 horas.</p>
-        <a href="../../#contacto" class="cta-btn" data-es="Solicitar consulta" data-en="Request a consultation">Solicitar consulta</a>
-      </section>
-      <section class="related-section" aria-label="Artículos relacionados">
-        <div class="related-title" data-es="También te puede interesar" data-en="You might also like">También te puede interesar</div>
-        <div class="related-grid">
-          <a href="../como-elegir-arquitecto-madrid/" class="rel-card">
-            <div class="rel-card-img"><img src="../../images/Edificio Salamanca 01.webp" alt="Cómo elegir arquitecto en Madrid" loading="lazy" decoding="async"></div>
-            <div class="rel-card-body">
-              <div class="rel-card-cat" data-es="Inversión & ciudad" data-en="Investment & city">Inversión & ciudad</div>
-              <div class="rel-card-title" data-es="Cómo elegir arquitecto en Madrid" data-en="How to choose an architect in Madrid">Cómo elegir arquitecto en Madrid</div>
-            </div>
-          </a>
-          <a href="../urbanismo-madrid-proyectos/" class="rel-card">
-            <div class="rel-card-img"><img src="../../images/Strategic Urban Regeneration 01.webp" alt="Urbanismo en Madrid: guía para proyectos" loading="lazy" decoding="async"></div>
-            <div class="rel-card-body">
-              <div class="rel-card-cat" data-es="Inversión & ciudad" data-en="Investment & city">Inversión & ciudad</div>
-              <div class="rel-card-title" data-es="Urbanismo en Madrid: guía para proyectos" data-en="Urban planning in Madrid: project guide">Urbanismo en Madrid: guía para proyectos</div>
-            </div>
-          </a>
-          <a href="../licencias-obra-madrid/" class="rel-card">
-            <div class="rel-card-img"><img src="../../images/Luxury Renovation A75_01.webp" alt="Licencias de obra en Madrid: guía completa" loading="lazy" decoding="async"></div>
-            <div class="rel-card-body">
-              <div class="rel-card-cat" data-es="Inversión & ciudad" data-en="Investment & city">Inversión & ciudad</div>
-              <div class="rel-card-title" data-es="Licencias de obra en Madrid: guía completa" data-en="Building permits in Madrid: complete guide">Licencias de obra en Madrid: guía completa</div>
-            </div>
-          </a>
-        </div>
-      </section>
+        <section class="article-faq" aria-labelledby="article-faq-title">
+    <h2 id="article-faq-title" data-es="Preguntas frecuentes" data-en="Frequently asked questions">Preguntas frecuentes</h2>
+    <details class="faq-item">
+      <summary data-es="¿Cuánto cuesta un informe de due diligence técnica en Madrid o Barcelona?" data-en="¿Cuánto cuesta un informe de due diligence técnica en Madrid o Barcelona?">¿Cuánto cuesta un informe de due diligence técnica en Madrid o Barcelona?</summary>
+      <p data-es="Un informe de due diligence técnica para una vivienda de 80-150 m² en Madrid o Barcelona realizado por un arquitecto colegiado tiene un coste de entre 800 y 2.500 €, dependiendo de la complejidad del inmueble y del nivel de detalle requerido. Para edificios completos o propiedades de alta inversión, el informe puede superar los 5.000 €." data-en="Un informe de due diligence técnica para una vivienda de 80-150 m² en Madrid o Barcelona realizado por un arquitecto colegiado tiene un coste de entre 800 y 2.500 €, dependiendo de la complejidad del inmueble y del nivel de detalle requerido. Para edificios completos o propiedades de alta inversión, el informe puede superar los 5.000 €.">Un informe de due diligence técnica para una vivienda de 80-150 m² en Madrid o Barcelona realizado por un arquitecto colegiado tiene un coste de entre 800 y 2.500 €, dependiendo de la complejidad del inmueble y del nivel de detalle requerido. Para edificios completos o propiedades de alta inversión, el informe puede superar los 5.000 €.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-es="¿Qué diferencia hay entre una tasación y un informe técnico de arquitecto?" data-en="¿Qué diferencia hay entre una tasación y un informe técnico de arquitecto?">¿Qué diferencia hay entre una tasación y un informe técnico de arquitecto?</summary>
+      <p data-es="La tasación inmobiliaria determina el valor de mercado del inmueble, pero no analiza en profundidad su estado técnico ni los costes de reforma necesarios. El informe técnico de un arquitecto evalúa la condición física del inmueble, identifica patologías y problemas ocultos, y proporciona una estimación de los costes de reforma necesarios para alcanzar el estándar deseado." data-en="La tasación inmobiliaria determina el valor de mercado del inmueble, pero no analiza en profundidad su estado técnico ni los costes de reforma necesarios. El informe técnico de un arquitecto evalúa la condición física del inmueble, identifica patologías y problemas ocultos, y proporciona una estimación de los costes de reforma necesarios para alcanzar el estándar deseado.">La tasación inmobiliaria determina el valor de mercado del inmueble, pero no analiza en profundidad su estado técnico ni los costes de reforma necesarios. El informe técnico de un arquitecto evalúa la condición física del inmueble, identifica patologías y problemas ocultos, y proporciona una estimación de los costes de reforma necesarios para alcanzar el estándar deseado.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-es="¿Cuándo debo contratar un arquitecto antes de comprar?" data-en="¿Cuándo debo contratar un arquitecto antes de comprar?">¿Cuándo debo contratar un arquitecto antes de comprar?</summary>
+      <p data-es="Es recomendable contratar un arquitecto antes de hacer una oferta formal cuando: la propiedad va a ser objeto de reforma importante, el edificio tiene más de 40 años, la propiedad está en un edificio con protección patrimonial, o el precio de compra más el coste de reforma estimado supera el millón de euros. En propiedades de inversión, la due diligence técnica debe ser siempre un paso previo a la oferta." data-en="Es recomendable contratar un arquitecto antes de hacer una oferta formal cuando: la propiedad va a ser objeto de reforma importante, el edificio tiene más de 40 años, la propiedad está en un edificio con protección patrimonial, o el precio de compra más el coste de reforma estimado supera el millón de euros. En propiedades de inversión, la due diligence técnica debe ser siempre un paso previo a la oferta.">Es recomendable contratar un arquitecto antes de hacer una oferta formal cuando: la propiedad va a ser objeto de reforma importante, el edificio tiene más de 40 años, la propiedad está en un edificio con protección patrimonial, o el precio de compra más el coste de reforma estimado supera el millón de euros. En propiedades de inversión, la due diligence técnica debe ser siempre un paso previo a la oferta.</p>
+    </details>
+    <details class="faq-item">
+      <summary data-es="¿Puede el arquitecto estimar el coste de reforma antes de la compra?" data-en="¿Puede el arquitecto estimar el coste de reforma antes de la compra?">¿Puede el arquitecto estimar el coste de reforma antes de la compra?</summary>
+      <p data-es="Sí. Un arquitecto con experiencia en el mercado local puede proporcionar una estimación de coste de reforma con una precisión del ±20-30% a partir de una visita a la propiedad y la revisión de la documentación disponible. Esta estimación es suficiente para tomar la decisión de compra. El proyecto de ejecución, con mediciones detalladas, se realiza después de la adquisición." data-en="Sí. Un arquitecto con experiencia en el mercado local puede proporcionar una estimación de coste de reforma con una precisión del ±20-30% a partir de una visita a la propiedad y la revisión de la documentación disponible. Esta estimación es suficiente para tomar la decisión de compra. El proyecto de ejecución, con mediciones detalladas, se realiza después de la adquisición.">Sí. Un arquitecto con experiencia en el mercado local puede proporcionar una estimación de coste de reforma con una precisión del ±20-30% a partir de una visita a la propiedad y la revisión de la documentación disponible. Esta estimación es suficiente para tomar la decisión de compra. El proyecto de ejecución, con mediciones detalladas, se realiza después de la adquisición.</p>
+    </details>
+  </section>
+        <section class="cta-section">
+    <div class="cta-bg">W</div>
+    <div class="cta-inner">
+      <span class="cta-ey" data-es="CUÉNTENOS SU PROYECTO" data-en="TELL US ABOUT YOUR PROJECT">CUÉNTENOS SU PROYECTO</span>
+      <h2 class="cta-title" data-es="¿Listo para avanzar?" data-en="Ready to move forward?">¿Listo para avanzar?</h2>
+      <div class="cta-btns">
+        <a href="tel:+34662411064" class="btn-ph" data-es="Llámenos" data-en="Call us">Llámenos</a>
+        <a href="mailto:info@wolfblanc.com" class="btn-em" data-es="Enviar email" data-en="Send email">Enviar email</a>
+        <a href="../../#contacto" class="btn-ct" data-es="Formulario de contacto" data-en="Contact form">Formulario de contacto</a>
+      </div>
+      <p class="cta-note" data-es="Consulta inicial sin coste" data-en="Initial consultation at no cost">Consulta inicial sin coste</p>
     </div>
-  </main>
+  </section>
+      <section class="related">
+    <div class="related-inner">
+      <span class="rel-ey" data-es="MÁS ARTÍCULOS" data-en="MORE ARTICLES">MÁS ARTÍCULOS</span>
+      <div class="rel-grid">
+        <a href="../como-elegir-arquitecto-madrid/" class="rel-card">
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Edificio Salamanca 01.webp" alt="Cómo elegir arquitecto en Madrid" loading="lazy" decoding="async"></div>
+          <div class="rel-body">
+            <p class="rel-cat" data-es="Inversión & ciudad" data-en="Inversión & ciudad">Inversión & ciudad</p>
+            <p class="rel-title" data-es="Cómo elegir arquitecto en Madrid" data-en="Cómo elegir arquitecto en Madrid">Cómo elegir arquitecto en Madrid</p>
+          </div>
+        </a>
+        <a href="../urbanismo-madrid-proyectos/" class="rel-card">
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Strategic Urban Regeneration 01.webp" alt="Urbanismo en Madrid: guía para proyectos" loading="lazy" decoding="async"></div>
+          <div class="rel-body">
+            <p class="rel-cat" data-es="Inversión & ciudad" data-en="Inversión & ciudad">Inversión & ciudad</p>
+            <p class="rel-title" data-es="Urbanismo en Madrid: guía para proyectos" data-en="Urbanismo en Madrid: guía para proyectos">Urbanismo en Madrid: guía para proyectos</p>
+          </div>
+        </a>
+        <a href="../licencias-obra-madrid/" class="rel-card">
+          <div class="rel-img-wrap"><img class="rel-img" src="../../images/Luxury Renovation A75_01.webp" alt="Licencias de obra en Madrid: guía completa" loading="lazy" decoding="async"></div>
+          <div class="rel-body">
+            <p class="rel-cat" data-es="Inversión & ciudad" data-en="Inversión & ciudad">Inversión & ciudad</p>
+            <p class="rel-title" data-es="Licencias de obra en Madrid: guía completa" data-en="Licencias de obra en Madrid: guía completa">Licencias de obra en Madrid: guía completa</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
   <footer>
   <span data-es="WOLFBLANC® ARCHITECTS S.L. · Madrid · © 2026" data-en="WOLFBLANC® ARCHITECTS S.L. · Madrid · © 2026">WOLFBLANC® ARCHITECTS S.L. · Madrid · © 2026</span>
   <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a>
   <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
+
+<button id="btt" aria-label="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
   <script>
-  (function(){var t=localStorage.getItem('wb-theme');if(t==='dark')document.documentElement.classList.add('wb-dark');})();
-  function applyLang(l){
-    document.querySelectorAll('[data-es]').forEach(function(el){el.textContent=l==='en'?(el.getAttribute('data-en')||el.getAttribute('data-es')):el.getAttribute('data-es');});
-    document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.classList.toggle('active',btn.getAttribute('data-lang-switch')===l);});
-    document.documentElement.setAttribute('lang',l==='en'?'en':'es');
+(function(){
+  var LS_THEME='wb-theme',LS_LANG='wb-es-lang';
+  var root=document.documentElement;
+  var btn=document.getElementById('theme-btn');
+  var moon=document.getElementById('wb-moon');
+  var sun=document.getElementById('wb-sun');
+  var lbs=document.querySelectorAll('[data-lang-switch]');
+  var burger=document.getElementById('burger-btn');
+  var mob=document.getElementById('mob-menu');
+  var burgerOpen=document.getElementById('burger-open');
+  var burgerClose=document.getElementById('burger-close-icon');
+
+  function setTheme(dark){
+    if(dark){root.classList.add('wb-dark');if(moon)moon.style.display='none';if(sun)sun.style.display=''}
+    else{root.classList.remove('wb-dark');if(moon)moon.style.display='';if(sun)sun.style.display='none'}
+    localStorage.setItem(LS_THEME,dark?'dark':'light');
   }
-  document.addEventListener('DOMContentLoaded',function(){
-    var savedLang=localStorage.getItem('wb-es-lang');applyLang(savedLang||'es');
-    document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){var l=this.getAttribute('data-lang-switch');localStorage.setItem('wb-es-lang',l);applyLang(l);});});
-    var tb=document.getElementById('theme-btn');
-    if(tb)tb.addEventListener('click',function(){var dark=document.documentElement.classList.toggle('wb-dark');localStorage.setItem('wb-theme',dark?'dark':'light');var sun=document.getElementById('wb-sun');var moon=document.getElementById('wb-moon');if(sun&&moon){sun.style.display=dark?'block':'none';moon.style.display=dark?'none':'block';}});
-    var burger=document.getElementById('burger-btn');var mob=document.getElementById('mob-menu');
-    if(burger&&mob)burger.addEventListener('click',function(){var open=mob.style.display==='flex';mob.style.display=open?'none':'flex';});
-    window.addEventListener('scroll',function(){var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);var btt=document.getElementById('btt');if(btt)btt.classList.toggle('visible',window.scrollY>400);});
-    var btt=document.getElementById('btt');if(btt)btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
-  });
-  </script>
-  <button id="btt" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+  var saved=localStorage.getItem(LS_THEME);
+  setTheme(saved?saved==='dark':window.matchMedia('(prefers-color-scheme:dark)').matches);
+  if(btn)btn.addEventListener('click',function(){setTheme(!root.classList.contains('wb-dark'));});
+
+  function applyLang(lang){
+    document.querySelectorAll('[data-es],[data-en]').forEach(function(el){
+      var val=lang==='en'?el.getAttribute('data-en'):el.getAttribute('data-es');
+      if(val!==null)el.innerHTML=val;
+    });
+    lbs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);});
+    localStorage.setItem(LS_LANG,lang);
+  }
+  var initLang=localStorage.getItem(LS_LANG)||'es';
+  if(initLang==='en')applyLang('en');
+  lbs.forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang-switch'));});});
+
+  if(burger&&mob){
+    burger.addEventListener('click',function(){
+      var open=mob.style.display==='block';
+      mob.style.display=open?'none':'block';
+      if(burgerOpen)burgerOpen.style.display=open?'':'none';
+      if(burgerClose)burgerClose.style.display=open?'none':'';
+    });
+  }
+
+  var btt=document.getElementById('btt'),ft=document.querySelector('footer');
+  if(btt){
+    window.addEventListener('scroll',function(){
+      btt.classList.toggle('visible',window.scrollY>300);
+      if(ft){var r=ft.getBoundingClientRect();btt.style.bottom=r.top<window.innerHeight?(window.innerHeight-r.top+16)+'px':'';}
+    },{passive:true});
+    btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  }
+
+  window.addEventListener('scroll',function(){
+    var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);
+  },{passive:true});
+})();
+</script>
+<script src="../article-enhancements.js" defer></script>
+
+
 </body>
 </html>

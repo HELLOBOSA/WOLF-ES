@@ -113,10 +113,10 @@
     .card-title{font-size:.98rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0 0 12px}
     .card-desc{font-size:1rem;line-height:1.72;letter-spacing:.005em;color:var(--text2);margin:0 0 18px}
     .wb-card[hidden]{display:none!important}
-    .load-more-wrap{display:flex;justify-content:center;padding:56px 0 0}
-    .load-more-wrap[hidden]{display:none!important}
-    #load-more{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:15px 40px;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:all .3s}
-    #load-more:hover{background:var(--accent);color:var(--bg)}
+    .wb-card[hidden]{display:none!important}
+    .lm-wrap{display:flex;justify-content:center;padding:56px 0 0}
+    .lm-btn{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);background:transparent;border:1px solid var(--line);padding:14px 28px;cursor:pointer;transition:color .3s,border-color .3s}
+    .lm-btn:hover{color:var(--accent);border-color:var(--accent)}
     .cta-section{position:relative;border-top:1px solid var(--line);margin-top:96px;overflow:hidden}
     .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
     .cta-inner{position:relative;max-width:1100px;margin:0 auto;padding:120px 48px;text-align:center}
@@ -125,6 +125,8 @@
     .cta-btns{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
     .btn-em{display:inline-flex;align-items:center;gap:10px;background:var(--text);color:var(--bg);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:opacity .3s}
     .btn-em:hover{opacity:.85}
+    .btn-ct{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
+    .btn-ct:hover{background:var(--accent);color:var(--bg)}
     .btn-ph{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);color:var(--accent);padding:15px 28px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:all .3s}
     .btn-ph:hover{background:var(--accent);color:var(--bg)}
     .cta-note{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text2);margin-top:36px}
@@ -417,20 +419,29 @@
 
   </div>
 
-  <div id="load-more-wrap" class="load-more-wrap">
-    <button id="load-more" type="button" data-es="Ver más artículos" data-en="Load more articles">Ver más artículos</button>
+  <div class="lm-wrap">
+    <button type="button" class="lm-btn" data-es="Ver más artículos" data-en="Show more articles">Ver más artículos</button>
   </div>
 
   <section class="cta-section">
-    <div class="cta-bg">WOLFBLANC</div>
+    <div class="cta-bg">PROYECTO</div>
     <div class="cta-inner">
-      <span class="cta-ey" data-es="WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA" data-en="WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA">WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA</span>
-      <h2 class="cta-title" data-es="¿Tienes un proyecto en mente?" data-en="Do you have a project in mind?">¿Tienes un proyecto en mente?</h2>
+      <span class="cta-ey" data-es="¿LISTO PARA EMPEZAR?" data-en="READY TO START?">¿LISTO PARA EMPEZAR?</span>
+      <p class="cta-title" data-es="Cada buen proyecto empieza con una conversación." data-en="Every good project starts with a conversation.">Cada buen proyecto empieza con una conversación.</p>
       <div class="cta-btns">
-        <a href="../#contacto" class="btn-em" data-es="Solicitar consulta" data-en="Request a consultation">Solicitar consulta</a>
-        <a href="../#galeria" class="btn-ph" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+        <a href="tel:+34662411064" class="btn-ph">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+34 662 411 064</span>
+        </a>
+        <a href="mailto:info@wolfblanc.com" class="btn-em">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <span data-es="Envíenos un email" data-en="Email us">Envíenos un email</span>
+        </a>
+        <a href="../#contacto" class="btn-ct">
+          <span data-es="Cuéntenos su proyecto →" data-en="Tell us about your project →">Cuéntenos su proyecto →</span>
+        </a>
       </div>
-      <p class="cta-note" data-es="Respondemos en menos de 24 horas" data-en="We respond within 24 hours">Respondemos en menos de 24 horas</p>
+      <p class="cta-note" data-es="Un socio senior lee cada consulta · respuesta en dos días laborables" data-en="A senior partner reads every enquiry · reply within two business days">Un socio senior lee cada consulta · respuesta en dos días laborables</p>
     </div>
   </section>
 </main>
@@ -441,25 +452,86 @@
   <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
-<button id="btt" aria-label="Volver arriba">↑</button>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
 
 <script>
-  (function(){var t=localStorage.getItem('wb-theme');if(t==='dark')document.documentElement.classList.add('wb-dark');})();
-  function applyLang(l){
-    document.querySelectorAll('[data-es]').forEach(function(el){el.textContent=l==='en'?(el.getAttribute('data-en')||el.getAttribute('data-es')):el.getAttribute('data-es');});
-    document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.classList.toggle('active',btn.getAttribute('data-lang-switch')===l);});
-    document.documentElement.setAttribute('lang',l==='en'?'en':'es');
+(function(){
+  var LS_THEME='wb-theme',LS_LANG='wb-es-lang';
+  var root=document.documentElement;
+  var dark=localStorage.getItem(LS_THEME)==='dark';
+  function applyTheme(){
+    root.classList.toggle('wb-dark',dark);
+    var sun=document.getElementById('wb-sun'),moon=document.getElementById('wb-moon');
+    if(sun)sun.style.display=dark?'':'none';
+    if(moon)moon.style.display=dark?'none':'';
+    localStorage.setItem(LS_THEME,dark?'dark':'light');
   }
-  document.addEventListener('DOMContentLoaded',function(){
-    var savedLang=localStorage.getItem('wb-es-lang');applyLang(savedLang||'es');
-    document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){var l=this.getAttribute('data-lang-switch');localStorage.setItem('wb-es-lang',l);applyLang(l);});});
-    var tb=document.getElementById('theme-btn');
-    if(tb)tb.addEventListener('click',function(){var dark=document.documentElement.classList.toggle('wb-dark');localStorage.setItem('wb-theme',dark?'dark':'light');var sun=document.getElementById('wb-sun');var moon=document.getElementById('wb-moon');if(sun&&moon){sun.style.display=dark?'block':'none';moon.style.display=dark?'none':'block';}});
-    var burger=document.getElementById('burger-btn');var mob=document.getElementById('mob-menu');
-    if(burger&&mob)burger.addEventListener('click',function(){var open=mob.style.display==='flex';mob.style.display=open?'none':'flex';});
-    window.addEventListener('scroll',function(){var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);var btt=document.getElementById('btt');if(btt)btt.classList.toggle('visible',window.scrollY>400);});
-    var btt=document.getElementById('btt');if(btt)btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  applyTheme();
+  var tb=document.getElementById('theme-btn');
+  if(tb)tb.addEventListener('click',function(){dark=!dark;applyTheme();});
+
+  var lang=localStorage.getItem(LS_LANG)||'es';
+  function applyLang(){
+    document.querySelectorAll('[data-es][data-en]').forEach(function(el){
+      var t=el.getAttribute('data-'+lang);
+      if(t!==null)el.textContent=t;
+    });
+    document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+      b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);
+    });
+    root.setAttribute('lang',lang==='en'?'en':'es');
+    localStorage.setItem(LS_LANG,lang);
+  }
+  applyLang();
+  document.querySelectorAll('[data-lang-switch]').forEach(function(b){
+    b.addEventListener('click',function(){lang=b.getAttribute('data-lang-switch');applyLang();});
   });
-  </script>
+
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){
+    if(nav)nav.classList.toggle('scrolled',window.scrollY>20);
+  },{passive:true});
+
+  var burger=document.getElementById('burger-btn'),mobMenu=document.getElementById('mob-menu');
+  var bOpen=document.getElementById('burger-open'),bClose=document.getElementById('burger-close-icon');
+  var menuOpen=false;
+  function setMenu(open){
+    menuOpen=open;
+    if(mobMenu)mobMenu.style.display=open?'block':'none';
+    if(bOpen)bOpen.style.display=open?'none':'';
+    if(bClose)bClose.style.display=open?'':'none';
+  }
+  if(burger)burger.addEventListener('click',function(){setMenu(!menuOpen);});
+  if(mobMenu)mobMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+
+  var cards=Array.from(document.querySelectorAll('[data-cat]'));
+  var countEl=document.getElementById('art-count');
+  var loadMore=document.querySelector('.lm-btn');
+  var activeFilter='Todas';
+  var visibleLimit=9;
+
+  function renderArticles(){
+    var eligible=cards.filter(function(card){return activeFilter==='Todas'||card.getAttribute('data-cat')===activeFilter;});
+    cards.forEach(function(card){card.hidden=true;});
+    eligible.slice(0,visibleLimit).forEach(function(card){card.hidden=false;});
+    if(countEl)countEl.textContent=String(eligible.length).padStart(2,'0');
+    if(loadMore)loadMore.parentElement.style.display=visibleLimit<eligible.length?'flex':'none';
+  }
+
+  document.querySelectorAll('[data-filter]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      activeFilter=btn.getAttribute('data-filter');
+      visibleLimit=9;
+      document.querySelectorAll('[data-filter]').forEach(function(b){b.classList.toggle('on',b===btn);});
+      renderArticles();
+    });
+  });
+  if(loadMore)loadMore.addEventListener('click',function(){visibleLimit+=9;renderArticles();});
+  renderArticles();
+})();
+</script>
+<script>
+(function(){var b=document.getElementById('btt'),f=document.querySelector('footer');window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>300);var r=f.getBoundingClientRect();b.style.bottom=r.top<window.innerHeight?(window.innerHeight-r.top+16)+'px':'';},{passive:true});})();
+</script>
 </body>
 </html>
