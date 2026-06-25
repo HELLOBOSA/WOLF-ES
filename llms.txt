@@ -1,125 +1,158 @@
-# Wolfblanc Architects - Sverige
+# Wolfblanc Architects - España
 
-> Wolfblanc ar ett arkitektur- och designkontor med kontor i Stockholm. Vi ritar bostader, renoveringar, investeringsfastigheter och hospitality-projekt med internationell erfarenhet och nordisk precision. SAR/MSA registrerad. WELL AP-certifierad.
+> Wolfblanc es un estudio de arquitectura y diseño con oficinas en Madrid y Barcelona. Desarrollamos proyectos residenciales, inversiones inmobiliarias, hostelería y arquitectura comercial con precisión técnica e identidad mediterránea. Registrado en COAM (N.25160). WELL AP certificado.
 
-## Webbplats
+## Sitio web
 
-- URL: https://wolfblanc.se
-- Sprak: svenska (standard), engelska
-- Typ: Arkitekturstudio
+- URL: https://wolfblanc.es
+- Idiomas: español (predeterminado), inglés
+- Tipo: Estudio de arquitectura
 
-## Kontor
+## Oficinas
 
-### Stockholm (Huvudkontor)
-- Adress: Kungsgatan 9, 111 43 Stockholm, Sverige
-- Telefon: +46 73 656 64 89
-- E-post: info@wolfblanc.com
-- Oppettider: mandag-fredag 09:00-18:00
+### Madrid (Oficina principal)
+- Dirección: Calle Velázquez 28, 28001 Madrid, España
+- Teléfono: +34 91 005 26 73
+- Email: info@wolfblanc.com
+- Horario: lunes-viernes 09:00-18:00
 
-## Meriter
+### Barcelona
+- Dirección: Carrer de Pau Claris 138, 08009 Barcelona, España
+- Teléfono: +34 93 220 14 58
+- Email: info@wolfblanc.com
+- Horario: lunes-viernes 09:00-18:00
 
-- SAR/MSA registrerad (Sveriges Arkitekter)
-- WELL AP-certifierad (design for halsa och valbefinnande)
-- COAM N.25160 (Spanien)
-- TEE N.168011 (Grekland)
-- KTH (Kungliga Tekniska Hogskolan)
-- ETSAM (Madrid)
-- 20+ ars samlad erfarenhet
+### Marbella
+- Dirección: Avenida Ricardo Soriano 72, 29601 Marbella, España
+- Teléfono: +34 95 238 47 91
+- Email: info@wolfblanc.com
+- Horario: lunes-viernes 09:00-18:00
 
-## Tjanster
+## Credenciales
 
-1. Teknisk due diligence fore forvary - Vi hjalper kopare, investerare och family offices att forsta en fastighet innan de binder kapital.
-2. Arkitektur & landskap - Byggnader och miljoer som ett integrerat system, fran koncept till fardigstallande.
-3. Projektledning / nybyggnad / totalrenovering - Stark samordning, tydlig kommunikation och integrerade BIM-floden.
-4. Bostadsinteriorer - Inomhusmiljoer anpassade till vardagligt bruk med omsorg om ljus, material och atmosfar.
-5. Kommersiell strategi & interior - Hogpresterande miljoer for varumarken och investerare. Arbetsplatser, hospitality, showrooms och retail.
-6. Stadsplanering & masterplanning - Platser, stadsdelar och offentliga miljoer med tydlig rumslig strategi.
-7. BIM-konsultation - Digital precision i varje fas. Samordning, riskreducering och smartare beslut.
-8. Valbefinnandekonsultation - WELL AP-konsulter som mater och optimerar luft, ljus, akustik och komfort.
-9. Arkitektonisk visualisering - Visuellt material for beslut, tillstand, forsaljning och investerarkommunikation.
+- COAM N.25160 (Colegio Oficial de Arquitectos de Madrid)
+- COAC (Colegio Oficial de Arquitectos de Cataluña)
+- WELL AP certificado (diseño para salud y bienestar)
+- TEE N.168011 (Grecia)
+- ETSAM (Escuela Técnica Superior de Arquitectura de Madrid)
+- KTH (Royal Institute of Technology, Estocolmo)
+- 20+ años de experiencia combinada
 
-## Specialiserade tjanster
+## Servicios
 
-- For investerare: Strategisk arkitektur for hogpresterande fastigheter. Matbart ROI.
-- For bostadsagare: Bostadsdesign och renovering med tydlig process.
-- Fritidshus: Fritidsbostader utformade med hansyn till landskap, material och hallbarhet.
+1. Due diligence técnica previa a la compra - Ayudamos a compradores, inversores y family offices a entender una propiedad antes de comprometer capital.
+2. Arquitectura & paisajismo - Edificios y entornos como un sistema integrado, del concepto a la entrega.
+3. Gestión de proyectos / obra nueva / renovación total - Coordinación sólida, comunicación clara y flujos BIM integrados.
+4. Interiores residenciales - Espacios interiores adaptados al uso diario, con atención a la luz, el material y la atmósfera.
+5. Estrategia comercial & interiorismo - Entornos de alto rendimiento para marcas e inversores. Espacios de trabajo, hostelería, showrooms y retail.
+6. Urbanismo & masterplanning - Lugares, distritos y entornos públicos con estrategia espacial clara.
+7. Consultoría BIM - Precisión digital en cada fase. Coordinación, reducción de riesgos y decisiones más inteligentes.
+8. Consultoría de bienestar - Consultores WELL AP que miden y optimizan aire, luz, acústica y confort.
+9. Visualización arquitectónica - Material visual para decisiones, permisos, ventas y comunicación con inversores.
 
-## Utvalda projekt
+## Servicios especializados
 
-- Horizon - Privat kustboende. Landskap, skugga och vardagsbruk som ett system.
-- K38 - Investeringslogik for lagenhet.
-- Plato's Academy - Stadsdelsstrategi och urban studie.
-- A75 - Renovering med ljus och logik for aterforsaljning.
-- Norrsken - Nordisk precision i arbetsplatsdesign.
-- Selva - Hospitality-atmosfar.
-- Boadilla - Bostaden som metod.
-- Nexus - Urban kontinuitet och kulturarv.
-- Granolita - Estetisk rumsupplevelse inom gastronomi.
-- Bistro Dterra - Varme genom restaurangdesign.
-- K12 - Korttidsuthyrning.
-- Boutique Apt. V1 - Investeringslagenhet.
+- Para inversores: Arquitectura estratégica para inmuebles de alto rendimiento. ROI medible.
+- Para propietarios: Diseño residencial y renovación con proceso claro.
+- Villas y segunda residencia: Diseñadas en torno al paisaje, los materiales y la durabilidad.
+- Hostelería y restauración: Concepto, licencias y dirección de obra en un servicio integral.
 
-## Geografisk tackning
+## Proyectos destacados
 
-Stockholm, Goteborg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Danderyd. Aven internationella projekt i Marbella, Spanien.
+- Horizon - Residencia costera privada. Paisaje, sombra y uso cotidiano como un sistema.
+- K38 - Lógica de inversión para apartamento.
+- Edificio Salamanca - Rehabilitación en el barrio prime de Madrid.
+- A75 - Renovación con luz y lógica de reventa.
+- Norrsken - Precisión nórdica en diseño de espacios de trabajo.
+- Selva - Atmósfera de hostelería.
+- Casa Boadilla - La vivienda como método.
+- Bistró Dterra - Calidez a través del diseño de restaurante.
+- Boutique Apt. V1 - Apartamento de inversión.
+- Market Regeneration - Regeneración urbana y estrategia de mercado.
+- Residential Rehabilitation K38 - Rehabilitación residencial con criterio inversor.
 
-## Process
+## Cobertura geográfica
 
-1. Vi lyssnar - Forstar projektet, behoven, budgeten och mojligheterna.
-2. Vi ritar - Utvecklar och visualiserar det arkitektoniska konceptet.
-3. Vi planerar i detalj - Tar fram ritningar, detaljer och byggnadsbeslut.
-4. Vi levererar - Foljer projektet till fardigstallande.
+Madrid, Barcelona, Marbella, Valencia, Sevilla, Bilbao, Eixample (Barcelona), Barrio Salamanca (Madrid), Costa del Sol, Costa Brava. También proyectos internacionales en Estocolmo y Atenas.
 
-## Sprak
+## Proceso
 
-Vi kommunicerar pa svenska, engelska, spanska och grekiska.
+1. Escuchamos - Entendemos el proyecto, las necesidades, el presupuesto y las oportunidades.
+2. Diseñamos - Desarrollamos y visualizamos el concepto arquitectónico.
+3. Planificamos en detalle - Preparamos planos, detalles y decisiones constructivas.
+4. Entregamos - Acompañamos el proyecto hasta su finalización.
+
+## Idiomas
+
+Nos comunicamos en español, inglés, sueco y griego.
 
 ## Journal
 
-- https://wolfblanc.se/journal/bygglov-stockholm-guide/
-- https://wolfblanc.se/journal/renovera-villa-stockholm/
-- https://wolfblanc.se/journal/tillbyggnad-stockholm-guide/
-- https://wolfblanc.se/journal/kostnad-arkitekt-stockholm/
-- https://wolfblanc.se/journal/arkitektritat-kok-badrum-stockholm/
-- https://wolfblanc.se/journal/fritidshus-skargard-stockholm/
-- https://wolfblanc.se/journal/hallbar-arkitektur-stockholm/
-- https://wolfblanc.se/journal/sekelskifte-planlosning-stockholm/
-- https://wolfblanc.se/journal/inredning-liten-lagenhet-stockholm/
+- https://wolfblanc.es/journal/como-elegir-arquitecto-madrid/
+- https://wolfblanc.es/journal/como-elegir-arquitecto-barcelona/
+- https://wolfblanc.es/journal/licencias-obra-madrid/
+- https://wolfblanc.es/journal/licencias-obra-barcelona/
+- https://wolfblanc.es/journal/tendencias-interiores-2026/
+- https://wolfblanc.es/journal/arquitectura-hosteleria-barcelona/
+- https://wolfblanc.es/journal/diseno-villas-lujo-costa-sol/
+- https://wolfblanc.es/journal/bim-well-arquitectura-sostenible/
+- https://wolfblanc.es/journal/urbanismo-madrid-proyectos/
+- https://wolfblanc.es/journal/arquitectura-sostenible-espana/
+- https://wolfblanc.es/journal/coste-arquitecto-madrid/
+- https://wolfblanc.es/journal/coste-arquitecto-barcelona/
+- https://wolfblanc.es/journal/reformar-villa-costa-del-sol/
+- https://wolfblanc.es/journal/dise%C3%B1o-pisos-peque%C3%B1os-madrid-barcelona/
+- https://wolfblanc.es/journal/como-analizar-propiedad-antes-de-comprar/
+- https://wolfblanc.es/journal/plantas-edificios-eixample-barrio-salamanca/
+- https://wolfblanc.es/journal/de-local-a-experiencia-hosteleria-espana/
 
-## Kontakt
+## Contacto
 
-- E-post: info@wolfblanc.com
-- Telefon: +46 73 656 64 89
-- Global webbplats: https://wolfblanc.com
+- Email: info@wolfblanc.com
+- Teléfono Madrid: +34 91 005 26 73
+- Teléfono Barcelona: +34 93 220 14 58
+- Sitio web global: https://wolfblanc.com
 
 ---
 
-# Wolfblanc Architects - Sweden
+# Wolfblanc Architects - Spain
 
-> Wolfblanc is an architecture and design studio with an office in Stockholm. We design homes, renovations, investment properties and hospitality projects with international experience and Nordic precision. SAR/MSA registered. WELL AP certified.
+> Wolfblanc is an architecture and design studio with offices in Madrid and Barcelona. We deliver residential, investment, hospitality and commercial architecture projects with technical precision and Mediterranean identity. Registered with COAM (N.25160). WELL AP certified.
 
 ## Website
 
-- URL: https://wolfblanc.se
-- Languages: Swedish (default), English
+- URL: https://wolfblanc.es
+- Languages: Spanish (default), English
 - Type: Architecture studio
 
-## Office
+## Offices
 
-### Stockholm (Headquarters)
-- Address: Kungsgatan 9, 111 43 Stockholm, Sweden
-- Phone: +46 73 656 64 89
+### Madrid (Main office)
+- Address: Calle Velázquez 28, 28001 Madrid, Spain
+- Phone: +34 91 005 26 73
+- Email: info@wolfblanc.com
+- Hours: Monday-Friday 09:00-18:00
+
+### Barcelona
+- Address: Carrer de Pau Claris 138, 08009 Barcelona, Spain
+- Phone: +34 93 220 14 58
+- Email: info@wolfblanc.com
+- Hours: Monday-Friday 09:00-18:00
+
+### Marbella
+- Address: Avenida Ricardo Soriano 72, 29601 Marbella, Spain
+- Phone: +34 95 238 47 91
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
 ## Credentials
 
-- SAR/MSA registered (Swedish Association of Architects)
+- COAM N.25160 (Official College of Architects of Madrid)
+- COAC (Official College of Architects of Catalonia)
 - WELL AP certified (design for human health and well-being)
-- COAM N.25160 (Spain)
 - TEE N.168011 (Greece)
-- KTH (Royal Institute of Technology, Stockholm)
 - ETSAM (Madrid School of Architecture)
+- KTH (Royal Institute of Technology, Stockholm)
 - 20+ years of combined experience
 
 ## Services
@@ -138,26 +171,26 @@ Vi kommunicerar pa svenska, engelska, spanska och grekiska.
 
 - For investors: Strategic architecture for high-performing real estate. Measurable ROI.
 - For homeowners: Residential design and renovation with a clear process.
-- Vacation homes: Designed around landscape, materials, and durability.
+- Villas and second homes: Designed around landscape, materials, and durability.
+- Hospitality and restaurants: Concept, licences, and site supervision as one integrated service.
 
 ## Selected projects
 
 - Horizon - Private coastal residence. Landscape, shade, and daily use as one system.
 - K38 - Investment apartment logic.
-- Plato's Academy - Urban district strategy study.
+- Edificio Salamanca - Rehabilitation in Madrid's prime neighbourhood.
 - A75 - Renovation with light and resale logic.
 - Norrsken - Nordic precision in workspace design.
 - Selva - Hospitality atmosphere.
-- Boadilla - The residence as method.
-- Nexus - Urban continuity and heritage.
-- Granolita - Spatial aesthetic experience in gastronomy.
+- Casa Boadilla - The residence as method.
 - Bistro Dterra - Warmth through restaurant design.
-- K12 - Short-term rental.
 - Boutique Apt. V1 - Investment apartment.
+- Market Regeneration - Urban regeneration and market strategy.
+- Residential Rehabilitation K38 - Investor-grade residential rehabilitation.
 
 ## Geographic coverage
 
-Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Danderyd. Also international projects in Marbella, Spain.
+Madrid, Barcelona, Marbella, Valencia, Seville, Bilbao, Eixample (Barcelona), Barrio Salamanca (Madrid), Costa del Sol, Costa Brava. Also international projects in Stockholm and Athens.
 
 ## Process
 
@@ -168,10 +201,31 @@ Stockholm, Gothenburg, Malmo, Uppsala, Ostermalm, Djursholm, Lidingo, Nacka, Dan
 
 ## Languages
 
-We communicate in Swedish, English, Spanish, and Greek.
+We communicate in Spanish, English, Swedish and Greek.
+
+## Journal
+
+- https://wolfblanc.es/journal/como-elegir-arquitecto-madrid/
+- https://wolfblanc.es/journal/como-elegir-arquitecto-barcelona/
+- https://wolfblanc.es/journal/licencias-obra-madrid/
+- https://wolfblanc.es/journal/licencias-obra-barcelona/
+- https://wolfblanc.es/journal/tendencias-interiores-2026/
+- https://wolfblanc.es/journal/arquitectura-hosteleria-barcelona/
+- https://wolfblanc.es/journal/diseno-villas-lujo-costa-sol/
+- https://wolfblanc.es/journal/bim-well-arquitectura-sostenible/
+- https://wolfblanc.es/journal/urbanismo-madrid-proyectos/
+- https://wolfblanc.es/journal/arquitectura-sostenible-espana/
+- https://wolfblanc.es/journal/coste-arquitecto-madrid/
+- https://wolfblanc.es/journal/coste-arquitecto-barcelona/
+- https://wolfblanc.es/journal/reformar-villa-costa-del-sol/
+- https://wolfblanc.es/journal/dise%C3%B1o-pisos-peque%C3%B1os-madrid-barcelona/
+- https://wolfblanc.es/journal/como-analizar-propiedad-antes-de-comprar/
+- https://wolfblanc.es/journal/plantas-edificios-eixample-barrio-salamanca/
+- https://wolfblanc.es/journal/de-local-a-experiencia-hosteleria-espana/
 
 ## Contact
 
 - Email: info@wolfblanc.com
-- Phone: +46 73 656 64 89
+- Phone Madrid: +34 91 005 26 73
+- Phone Barcelona: +34 93 220 14 58
 - Global website: https://wolfblanc.com
