@@ -1,120 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wolfblanc.es/</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://wolfblanc.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wolfblanc.es/"/>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-06-24</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-06-25</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/como-elegir-arquitecto-madrid/</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-02-07</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/como-elegir-arquitecto-barcelona/</loc>
+    <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-02-21</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/licencias-obra-madrid/</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-07</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/licencias-obra-barcelona/</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-21</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/tendencias-interiores-2026/</loc>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-04-04</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/arquitectura-hosteleria-barcelona/</loc>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-04-18</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/diseno-villas-lujo-costa-sol/</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/bim-well-arquitectura-sostenible/</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-05-16</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/urbanismo-madrid-proyectos/</loc>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-05-23</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/arquitectura-sostenible-espana/</loc>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-05-30</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/coste-arquitecto-madrid/</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-06-05</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/coste-arquitecto-barcelona/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-06-08</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/reformar-villa-costa-del-sol/</loc>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-06-11</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/diseno-pisos-pequenos-madrid-barcelona/</loc>
+    <lastmod>2026-06-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-06-14</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/como-analizar-propiedad-antes-de-comprar/</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-06-17</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/plantas-edificios-eixample-barrio-salamanca/</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-06-20</lastmod>
   </url>
   <url>
     <loc>https://wolfblanc.es/journal/de-local-a-experiencia-hosteleria-espana/</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-06-22</lastmod>
   </url>
 </urlset>
