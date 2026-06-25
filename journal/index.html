@@ -70,13 +70,13 @@
     body{background:var(--bg);color:var(--text);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.02em;line-height:1.8;min-height:100vh;transition:background .4s,color .4s}
     a{text-decoration:none;color:inherit;transition:color .3s}
     button{font-family:inherit;cursor:pointer}
-    nav{position:fixed;top:0;left:0;width:100%;z-index:100;backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
-    nav.scrolled{background:var(--nav);border-bottom-color:var(--line)}
+    nav{position:fixed;top:0;left:0;width:100%;z-index:1000;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+    nav.scrolled{background:var(--nav);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
     .mob-menu a{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);padding:16px 1.25rem;border-bottom:1px solid var(--line);transition:color .3s}
     .mob-menu a:last-child{border-bottom:0}
     .mob-menu a:hover{color:var(--accent)}
     header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);min-height:68vh;display:flex;align-items:center}
-    .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;opacity:.7;pointer-events:none;will-change:background-position}
+    .hero-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none;will-change:background-position}
     .hero-inner{position:relative;max-width:1100px;width:100%;margin:0 auto;padding:100px 48px 80px}
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
     h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;text-transform:uppercase;letter-spacing:.08em;line-height:1.15;margin:0 0 28px;max-width:18ch}
@@ -135,7 +135,6 @@
     #btt:hover{background:var(--accent);color:var(--bg)}
     @media(max-width:860px){
       .burger{display:flex}
-      .hero-grid{animation:none;will-change:auto}
       .hero-inner,main,.cta-inner{padding-left:24px;padding-right:24px}
       .hero-inner{padding-top:88px;padding-bottom:64px}
       .featured{grid-template-columns:1fr}
@@ -145,6 +144,7 @@
       .cta-inner{padding-top:80px;padding-bottom:80px}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
     }
+    @media(max-width:768px){.hero-grid{animation:none;will-change:auto}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
     @media(min-width:561px) and (max-width:860px){.grid3{grid-template-columns:1fr 1fr}}
     footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text2)}
