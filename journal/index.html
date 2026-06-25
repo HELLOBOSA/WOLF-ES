@@ -106,6 +106,10 @@
     .card-title{font-size:.98rem;font-weight:300;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0 0 12px}
     .card-desc{font-size:1rem;line-height:1.72;letter-spacing:.005em;color:var(--text2);margin:0 0 18px}
     .wb-card[hidden]{display:none!important}
+    .load-more-wrap{display:flex;justify-content:center;padding:56px 0 0}
+    .load-more-wrap[hidden]{display:none!important}
+    #load-more{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:15px 40px;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:all .3s}
+    #load-more:hover{background:var(--accent);color:var(--bg)}
     .cta-section{position:relative;border-top:1px solid var(--line);margin-top:96px;overflow:hidden}
     .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
     .cta-inner{position:relative;max-width:1100px;margin:0 auto;padding:120px 48px;text-align:center}
@@ -145,15 +149,15 @@
 
 <nav id="wbnav">
   <div class="nb">
-    <a href="../index.html" class="nb-logo">WOLFBLANC</a>
+    <a href="../" class="nb-logo">WOLFBLANC</a>
     <div class="nb-right">
       <div class="nb-links">
-        <a href="../index.html#estudio" class="nb-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-        <a href="../index.html#galeria" class="nb-link" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
-        <a href="../index.html#servicios" class="nb-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-        <a href="../index.html#proceso" class="nb-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+        <a href="../#estudio" class="nb-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
+        <a href="../#galeria" class="nb-link" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+        <a href="../#servicios" class="nb-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
+        <a href="../#proceso" class="nb-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
         <a href="./" class="nb-link active" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
-        <a href="../index.html#contacto" class="nb-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+        <a href="../#contacto" class="nb-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
       <div class="lang-sw">
         <button type="button" class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
@@ -170,12 +174,12 @@
     </div>
   </div>
   <div class="mob-menu" id="mob-menu">
-    <a href="../index.html#estudio" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-    <a href="../index.html#galeria" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
-    <a href="../index.html#servicios" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-    <a href="../index.html#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+    <a href="../#estudio" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
+    <a href="../#galeria" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+    <a href="../#servicios" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
+    <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
     <a href="./" style="color:var(--accent)" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
-    <a href="../index.html#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="../#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
   </div>
 </nav>
 
@@ -410,14 +414,18 @@
 
   </div>
 
+  <div id="load-more-wrap" class="load-more-wrap">
+    <button id="load-more" type="button" data-es="Ver más artículos" data-en="Load more articles">Ver más artículos</button>
+  </div>
+
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
     <div class="cta-inner">
       <span class="cta-ey" data-es="WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA" data-en="WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA">WOLFBLANC ARCHITECTS · MADRID · BARCELONA · MARBELLA</span>
       <h2 class="cta-title" data-es="¿Tienes un proyecto en mente?" data-en="Do you have a project in mind?">¿Tienes un proyecto en mente?</h2>
       <div class="cta-btns">
-        <a href="../index.html#contacto" class="btn-em" data-es="Solicitar consulta" data-en="Request a consultation">Solicitar consulta</a>
-        <a href="../index.html#galeria" class="btn-ph" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
+        <a href="../#contacto" class="btn-em" data-es="Solicitar consulta" data-en="Request a consultation">Solicitar consulta</a>
+        <a href="../#galeria" class="btn-ph" data-es="Ver proyectos" data-en="View projects">Ver proyectos</a>
       </div>
       <p class="cta-note" data-es="Respondemos en menos de 24 horas" data-en="We respond within 24 hours">Respondemos en menos de 24 horas</p>
     </div>
@@ -427,10 +435,10 @@
 <footer>
   <span data-es="© 2026 Wolfblanc Architects" data-en="© 2026 Wolfblanc Architects">© 2026 Wolfblanc Architects</span>
   <nav class="foot-links" aria-label="Pie de página">
-    <a href="../index.html#estudio" data-es="Estudio" data-en="Studio">Estudio</a>
-    <a href="../index.html#galeria" data-es="Galería" data-en="Gallery">Galería</a>
-    <a href="../index.html#servicios" data-es="Servicios" data-en="Services">Servicios</a>
-    <a href="../index.html#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    <a href="../#estudio" data-es="Estudio" data-en="Studio">Estudio</a>
+    <a href="../#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+    <a href="../#servicios" data-es="Servicios" data-en="Services">Servicios</a>
+    <a href="../#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
     <a href="./" data-es="Journal" data-en="Journal">Journal</a>
   </nav>
 </footer>
@@ -439,6 +447,25 @@
 
 <script>
   const LS_LANG='wb-es-lang', LS_THEME='wb-theme';
+  const PAGE_SIZE = 9;
+  let currentFilter = 'Todas';
+  let shownCount = PAGE_SIZE;
+
+  function allCards() { return Array.from(document.querySelectorAll('.wb-card')); }
+
+  function matchingCards() {
+    return allCards().filter(c => currentFilter === 'Todas' || c.dataset.cat === currentFilter);
+  }
+
+  function updateGrid() {
+    const matching = matchingCards();
+    allCards().forEach(c => { c.hidden = true; });
+    matching.slice(0, shownCount).forEach(c => { c.hidden = false; });
+    const cnt = document.getElementById('art-count');
+    if (cnt) cnt.textContent = matching.length;
+    const wrap = document.getElementById('load-more-wrap');
+    if (wrap) wrap.hidden = shownCount >= matching.length;
+  }
 
   function applyLang(l) {
     document.querySelectorAll('[data-es]').forEach(el => {
@@ -451,8 +478,7 @@
       if (b) { b.classList.toggle('active', id === 'btn-' + l); }
     });
     document.documentElement.setAttribute('lang', l === 'en' ? 'en' : 'es');
-    const cnt = document.getElementById('art-count');
-    if (cnt) cnt.textContent = '10';
+    updateGrid();
   }
 
   function setLang(l) { localStorage.setItem(LS_LANG, l); applyLang(l); }
@@ -462,6 +488,7 @@
   })();
 
   document.addEventListener('DOMContentLoaded', function() {
+    updateGrid();
     applyLang(localStorage.getItem(LS_LANG) || 'es');
 
     // Theme toggle
@@ -500,23 +527,24 @@
     }, { passive: true });
 
     // Filter buttons
-    const filterBtns = document.querySelectorAll('.fbtn');
-    const cards = document.querySelectorAll('.wb-card');
-    filterBtns.forEach(btn => {
+    document.querySelectorAll('.fbtn').forEach(btn => {
       btn.addEventListener('click', function() {
-        filterBtns.forEach(b => b.classList.remove('on'));
+        document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('on'));
         this.classList.add('on');
-        const f = this.dataset.filter;
-        let count = 0;
-        cards.forEach(card => {
-          const show = f === 'Todas' || card.dataset.cat === f;
-          card.hidden = !show;
-          if (show) count++;
-        });
-        const cnt = document.getElementById('art-count');
-        if (cnt) cnt.textContent = count;
+        currentFilter = this.dataset.filter;
+        shownCount = PAGE_SIZE;
+        updateGrid();
       });
     });
+
+    // Load more
+    const moreBtn = document.getElementById('load-more');
+    if (moreBtn) {
+      moreBtn.addEventListener('click', function() {
+        shownCount += PAGE_SIZE;
+        updateGrid();
+      });
+    }
 
     // Back to top
     const btt = document.getElementById('btt');
