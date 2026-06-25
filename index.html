@@ -373,7 +373,8 @@
 
 
     /* Contact */
-    .contact-grid{display:grid;grid-template-columns:1fr;gap:48px;margin-bottom:64px;max-width:560px}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:64px;max-width:860px}
+    @media(max-width:640px){.contact-grid{grid-template-columns:1fr;gap:40px}}
     .contact-col h3{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;margin-bottom:4px;color:var(--accent)}
     .office-label{display:block;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px}
     .contact-col address{color:var(--text-secondary);line-height:1.8;margin-bottom:8px}
@@ -825,7 +826,7 @@
   <div class="si">
     <span class="eyebrow" data-es="CONTACTO" data-en="CONTACT">CONTACTO</span>
     <h2 style="font-size:clamp(1.2rem,2.5vw,1.875rem);margin-bottom:64px" data-es="Tres oficinas, un solo equipo" data-en="Three offices, one team">Tres oficinas, un solo equipo</h2>
-    <div class="contact-grid reveal" style="grid-template-columns:1fr 1fr 1fr;gap:32px;max-width:860px">
+    <div class="contact-grid reveal">
       <div class="contact-col">
         <h3 data-es="MADRID" data-en="MADRID">MADRID</h3>
         <span class="office-label" data-es="Sede Principal" data-en="Main Office">Sede Principal</span>
