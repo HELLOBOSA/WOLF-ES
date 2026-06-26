@@ -402,6 +402,10 @@
     window.addEventListener('scroll',function(){btt.classList.toggle('visible',window.scrollY>400);},{passive:true});
     btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
   }
+
+  window.addEventListener('scroll',function(){
+    var n=document.getElementById('nav');if(n)n.classList.toggle('scrolled',window.scrollY>20);
+  },{passive:true});
 })();
 </script>
 <script src="../article-enhancements.js" defer></script>
