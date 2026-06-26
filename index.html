@@ -206,10 +206,10 @@
     /* Nav */
     nav{
       position:fixed;top:0;left:0;width:100%;z-index:1000;
-      transition:background .4s,border-color .4s
+      border-bottom:1px solid transparent;transition:background .4s,border-color .4s
     }
     .nav-bar{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 2rem}
-    nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
     .nav-logo{font-size:.8rem;letter-spacing:.2em;font-weight:300;color:var(--text-primary);white-space:nowrap}
     .nav-logo:hover{color:var(--accent)}
     .nav-right{display:flex;align-items:center;gap:20px}
