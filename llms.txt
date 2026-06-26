@@ -12,19 +12,19 @@
 
 ### Madrid (Oficina principal)
 - Dirección: Calle Velázquez 28, 28001 Madrid, España
-- Teléfono: +34 91 005 26 73
+- Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
 
 ### Barcelona
 - Dirección: Carrer de Pau Claris 138, 08009 Barcelona, España
-- Teléfono: +34 93 220 14 58
+- Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
 
 ### Marbella
 - Dirección: Avenida Ricardo Soriano 72, 29601 Marbella, España
-- Teléfono: +34 95 238 47 91
+- Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
 
@@ -121,8 +121,7 @@ Nos comunicamos en español, inglés, sueco y griego.
 ## Contacto
 
 - Email: info@wolfblanc.com
-- Teléfono Madrid: +34 91 005 26 73
-- Teléfono Barcelona: +34 93 220 14 58
+- Teléfono: +34 662 411 064
 - Sitio web global: https://wolfblanc.com
 
 ---
@@ -141,19 +140,19 @@ Nos comunicamos en español, inglés, sueco y griego.
 
 ### Madrid (Main office)
 - Address: Calle Velázquez 28, 28001 Madrid, Spain
-- Phone: +34 91 005 26 73
+- Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
 ### Barcelona
 - Address: Carrer de Pau Claris 138, 08009 Barcelona, Spain
-- Phone: +34 93 220 14 58
+- Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
 ### Marbella
 - Address: Avenida Ricardo Soriano 72, 29601 Marbella, Spain
-- Phone: +34 95 238 47 91
+- Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
@@ -250,6 +249,5 @@ We communicate in Spanish, English, Swedish and Greek.
 ## Contact
 
 - Email: info@wolfblanc.com
-- Phone Madrid: +34 91 005 26 73
-- Phone Barcelona: +34 93 220 14 58
+- Phone: +34 662 411 064
 - Global website: https://wolfblanc.com
