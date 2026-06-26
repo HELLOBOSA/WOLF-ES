@@ -86,6 +86,18 @@ Madrid, Barcelona, Marbella, Valencia, Sevilla, Bilbao, Eixample (Barcelona), Ba
 
 Nos comunicamos en español, inglés, sueco y griego.
 
+## Servicios
+
+- https://wolfblanc.es/servicios/due-diligence-tecnica/
+- https://wolfblanc.es/servicios/arquitectura-paisaje/
+- https://wolfblanc.es/servicios/renovacion-integral-madrid/
+- https://wolfblanc.es/servicios/interiores-residenciales/
+- https://wolfblanc.es/servicios/estrategia-comercial/
+- https://wolfblanc.es/servicios/urbanismo-masterplan/
+- https://wolfblanc.es/servicios/consultoria-bim/
+- https://wolfblanc.es/servicios/bienestar-arquitectura/
+- https://wolfblanc.es/servicios/visualizacion-arquitectonica/
+
 ## Journal
 
 - https://wolfblanc.es/journal/como-elegir-arquitecto-madrid/
@@ -202,6 +214,18 @@ Madrid, Barcelona, Marbella, Valencia, Seville, Bilbao, Eixample (Barcelona), Ba
 ## Languages
 
 We communicate in Spanish, English, Swedish and Greek.
+
+## Services
+
+- https://wolfblanc.es/servicios/due-diligence-tecnica/
+- https://wolfblanc.es/servicios/arquitectura-paisaje/
+- https://wolfblanc.es/servicios/renovacion-integral-madrid/
+- https://wolfblanc.es/servicios/interiores-residenciales/
+- https://wolfblanc.es/servicios/estrategia-comercial/
+- https://wolfblanc.es/servicios/urbanismo-masterplan/
+- https://wolfblanc.es/servicios/consultoria-bim/
+- https://wolfblanc.es/servicios/bienestar-arquitectura/
+- https://wolfblanc.es/servicios/visualizacion-arquitectonica/
 
 ## Journal
 
