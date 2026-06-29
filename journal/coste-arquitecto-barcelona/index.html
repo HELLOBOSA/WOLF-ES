@@ -477,5 +477,32 @@
 </script>
 
 
+<script>
+(function(){
+  var btt=document.getElementById('btt');
+  var banner=document.getElementById('cookie-banner');
+  var footer=document.querySelector('footer');
+  if(!btt||!banner)return;
+  function bannerVisible(){return !banner.hidden&&banner.offsetParent!==null;}
+  function baseBottom(){return bannerVisible()?banner.offsetHeight+40:32;}
+  function adjustCookieSafeBackToTop(){
+    var base=baseBottom();
+    if(footer){
+      var rect=footer.getBoundingClientRect();
+      if(rect.top<window.innerHeight){
+        btt.style.bottom=Math.max(base,window.innerHeight-rect.top+16)+'px';
+        return;
+      }
+    }
+    btt.style.bottom=bannerVisible()?base+'px':'';
+  }
+  window.addEventListener('scroll',adjustCookieSafeBackToTop,{passive:true});
+  window.addEventListener('resize',adjustCookieSafeBackToTop,{passive:true});
+  new MutationObserver(adjustCookieSafeBackToTop).observe(banner,{attributes:true,attributeFilter:['hidden','style','class']});
+  banner.addEventListener('click',function(){setTimeout(adjustCookieSafeBackToTop,0);});
+  adjustCookieSafeBackToTop();
+})();
+</script>
+
 </body>
 </html>
