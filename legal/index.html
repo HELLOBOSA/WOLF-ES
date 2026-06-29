@@ -261,6 +261,14 @@
       .cookie-banner{flex-wrap:wrap;border-radius:18px;padding:9px 10px;row-gap:8px}
       .cookie-copy,.cookie-actions{justify-content:center}
     }
+    footer>span{flex:1 1 0}
+    footer>span:nth-child(2){text-align:center}
+    footer>span:nth-child(3){text-align:right}
+    @media(max-width:760px){
+      footer>span{flex:0 0 100%;text-align:center}
+      footer>span:nth-child(3){text-align:center}
+    }
+
   </style>
 </head>
 <body>
@@ -546,14 +554,32 @@
   });
   setLanguage(localStorage.getItem('wb-es-lang') || 'es');
 
+  const cookieChoiceKey = 'wb-cookie-choice';
+  const cookieConsentDays = 180;
+  function cookieExpiryTime(){
+    return Date.now() + cookieConsentDays * 24 * 60 * 60 * 1000;
+  }
+  function readCookieChoice(){
+    const raw = localStorage.getItem(cookieChoiceKey);
+    if(!raw) return null;
+    try {
+      const saved = JSON.parse(raw);
+      if(saved && saved.expires && saved.expires > Date.now()) return saved.choice || 'saved';
+      localStorage.removeItem(cookieChoiceKey);
+      return null;
+    } catch(e) {
+      localStorage.setItem(cookieChoiceKey, JSON.stringify({ choice: raw, expires: cookieExpiryTime() }));
+      return raw;
+    }
+  }
   function closeCookieBanner(choice){
     if(!cookieBanner) return;
-    localStorage.setItem('wb-cookie-choice', choice);
+    localStorage.setItem(cookieChoiceKey, JSON.stringify({ choice, expires: cookieExpiryTime() }));
     cookieBanner.hidden = true;
     document.body.classList.remove('cookie-banner-visible');
     updateBackToTopPosition();
   }
-  if(cookieBanner && !localStorage.getItem('wb-cookie-choice')){
+  if(cookieBanner && !readCookieChoice()){
     cookieBanner.hidden = false;
     document.body.classList.add('cookie-banner-visible');
     updateBackToTopPosition();
