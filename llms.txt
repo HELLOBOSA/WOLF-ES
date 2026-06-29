@@ -8,6 +8,10 @@
 - Idiomas: español (predeterminado), inglés
 - Tipo: Estudio de arquitectura
 
+## Legal
+
+- Aviso legal: https://wolfblanc.es/legal/
+
 ## Oficinas
 
 ### Madrid (Oficina principal)
@@ -135,6 +139,10 @@ Nos comunicamos en español, inglés, sueco y griego.
 - URL: https://wolfblanc.es
 - Languages: Spanish (default), English
 - Type: Architecture studio
+
+## Legal
+
+- Legal notice: https://wolfblanc.es/legal/
 
 ## Offices
 
