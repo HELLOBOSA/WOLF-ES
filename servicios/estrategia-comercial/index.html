@@ -612,7 +612,7 @@ footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-conten
   var banner=document.getElementById('cookie-banner');
   var footer=document.querySelector('footer');
   if(!btt||!banner)return;
-  function bannerVisible(){return !banner.hidden&&banner.offsetParent!==null;}
+  function bannerVisible(){return !banner.hidden&&window.getComputedStyle(banner).display!=='none';}
   function baseBottom(){return bannerVisible()?banner.offsetHeight+40:32;}
   function adjustCookieSafeBackToTop(){
     var base=baseBottom();
