@@ -53,7 +53,7 @@
       "@type": "Organization",
       "name": "Wolfblanc Architects",
       "url": "https://wolfblanc.es/",
-      "logo": {"@type": "ImageObject", "url": "https://wolfblanc.es/apple-touch-icon.png"}
+      "logo": {"@type": "ImageObject", "url": "https://wolfblanc.es/images/210-sq-white-02.webp"}
     },
     "mainEntity": [
       {
@@ -209,6 +209,14 @@
     .faq-item summary::after{content:'+';position:absolute;right:4px;top:16px;color:var(--accent);font-size:1.1rem}
     .faq-item[open] summary::after{content:'\2212'}
     .faq-item p{padding:0 36px 20px 0;margin:0;font-size:.96rem;line-height:1.8;letter-spacing:.005em;color:var(--text2)}
+    .faq-links{max-width:760px;margin:0 auto;padding:8px 32px 88px}
+    .faq-links h2{font-size:1.05rem;font-weight:400;text-transform:uppercase;letter-spacing:.05em;color:var(--text);margin:0 0 6px}
+    .faq-links .fl-intro{font-size:.92rem;line-height:1.7;color:var(--text2);margin:0 0 18px}
+    .faq-links ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+    .faq-links li{border-bottom:1px solid var(--line)}
+    .faq-links a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 0;font-size:.92rem;letter-spacing:.02em;color:var(--text2)}
+    .faq-links a:hover{color:var(--accent)}
+    .faq-links a::after{content:'→';color:var(--accent);opacity:.7;flex-shrink:0}
     .cta-section{position:relative;border-top:1px solid var(--line);overflow:hidden}
     .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
     .cta-inner{position:relative;max-width:900px;margin:0 auto;padding:104px 32px;text-align:center}
@@ -233,7 +241,7 @@
       .nav-bar{padding:0 1.25rem}
       .nav-links{display:none}
       .burger-btn{display:flex}
-      .hero-inner,.faq-wrap,.cta-inner{padding-left:24px;padding-right:24px}
+      .hero-inner,.faq-wrap,.cta-inner,.faq-links{padding-left:24px;padding-right:24px}
       .hero-inner{padding-top:92px;padding-bottom:56px}
       footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}
       footer>span:nth-child(2),footer>span:nth-child(3){text-align:center}
@@ -290,6 +298,7 @@
         <a href="../#servicios" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
         <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
         <a href="../journal/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="/preguntas-frecuentes/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
         <a href="../#contacto" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
       <div class="language-switch" aria-label="Seleccionar idioma">
@@ -312,6 +321,7 @@
     <a href="../#servicios" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
     <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
     <a href="../journal/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+    <a href="/preguntas-frecuentes/" data-es="FAQ" data-en="FAQ">FAQ</a>
     <a href="../#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
   </div>
 </nav>
@@ -439,6 +449,20 @@
 
   </div>
 
+  <section class="faq-links" aria-labelledby="faq-links-title">
+    <h2 id="faq-links-title" data-es="Servicios y guías relacionadas" data-en="Related services and guides">Servicios y guías relacionadas</h2>
+    <p class="fl-intro" data-es="Amplíe la información sobre cómo trabajamos y qué podemos hacer por su proyecto." data-en="Read more about how we work and what we can do for your project.">Amplíe la información sobre cómo trabajamos y qué podemos hacer por su proyecto.</p>
+    <ul>
+      <li><a href="/estudio-arquitectura-espana/" data-es="Estudio de arquitectura en España" data-en="Architecture studio in Spain">Estudio de arquitectura en España</a></li>
+      <li><a href="/servicios/renovacion-integral-madrid/" data-es="Renovación integral y gestión de proyectos" data-en="Full renovation and project management">Renovación integral y gestión de proyectos</a></li>
+      <li><a href="/servicios/due-diligence-tecnica/" data-es="Due diligence técnica previa a la compra" data-en="Pre-purchase technical due diligence">Due diligence técnica previa a la compra</a></li>
+      <li><a href="/servicios/estrategia-comercial/" data-es="Estrategia comercial e interiorismo" data-en="Commercial strategy and interiors">Estrategia comercial e interiorismo</a></li>
+      <li><a href="/servicios/consultoria-bim/" data-es="Consultoría BIM" data-en="BIM consultancy">Consultoría BIM</a></li>
+      <li><a href="/servicios/bienestar-arquitectura/" data-es="Consultoría de bienestar (WELL AP)" data-en="Well-being consultancy (WELL AP)">Consultoría de bienestar (WELL AP)</a></li>
+      <li><a href="/journal/" data-es="Journal: guías de arquitectura en España" data-en="Journal: architecture guides in Spain">Journal: guías de arquitectura en España</a></li>
+    </ul>
+  </section>
+
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
     <div class="cta-inner">
@@ -464,7 +488,7 @@
 
 <footer>
   <span data-es="WOLFBLANC® ARCHITECTS S.L. · España · © 2026" data-en="WOLFBLANC® ARCHITECTS S.L. · Spain · © 2026">WOLFBLANC® ARCHITECTS S.L. · España · © 2026</span>
-  <span><a href="../estudio-arquitectura-espana/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../preguntas-frecuentes/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
+  <span><a href="/estudio-arquitectura-espana/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="/preguntas-frecuentes/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
   <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 

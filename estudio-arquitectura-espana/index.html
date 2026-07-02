@@ -60,7 +60,7 @@
         "@id": "https://wolfblanc.es/#business",
         "name": "Wolfblanc Architects",
         "url": "https://wolfblanc.es/",
-        "logo": "https://wolfblanc.es/apple-touch-icon.png",
+        "logo": "https://wolfblanc.es/images/210-sq-white-02.webp",
         "image": "https://wolfblanc.es/images/Horizon%20House%2001.webp",
         "description": "Estudio de arquitectura en Madrid, Barcelona y Marbella. Proyectos residenciales, de hostelería e inversión con precisión técnica e identidad mediterránea. COAM N.25160, WELL AP.",
         "email": "info@wolfblanc.com",
@@ -123,7 +123,11 @@
     .eyebrow{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--text2);margin-bottom:20px}
     h1{font-size:clamp(1.9rem,4.6vw,3.3rem);font-weight:200;text-transform:uppercase;letter-spacing:.06em;line-height:1.15;margin:0 0 26px;max-width:20ch}
     .lead{font-size:1.1rem;line-height:1.7;color:var(--text2);max-width:60ch}
-    .wb-body{max-width:760px;margin:0 auto;padding:72px 32px 24px;font-size:1.08rem;line-height:1.9;color:var(--text2)}
+    .hero-img{max-width:1000px;margin:0 auto;padding:56px 32px 0}
+    .hero-img-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--line)}
+    .hero-img-wrap img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
+    .img-caption{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin:12px 0 0}
+    .wb-body{max-width:760px;margin:0 auto;padding:56px 32px 24px;font-size:1.08rem;line-height:1.9;color:var(--text2)}
     .wb-body p{margin:0 0 24px;font-size:1em;line-height:inherit;color:inherit}
     .wb-body p.opening{font-size:1.16rem;line-height:1.7;color:var(--text)}
     h2.section-h{font-size:1.24rem;font-weight:400;text-transform:uppercase;letter-spacing:.055em;line-height:1.42;color:var(--text);margin:48px 0 20px}
@@ -171,7 +175,7 @@
       .nav-bar{padding:0 1.25rem}
       .nav-links{display:none}
       .burger-btn{display:flex}
-      .hero-inner,.wb-body,.cta-inner{padding-left:24px;padding-right:24px}
+      .hero-inner,.wb-body,.cta-inner,.hero-img{padding-left:24px;padding-right:24px}
       .hero-inner{padding-top:96px;padding-bottom:56px}
       .aud-grid{grid-template-columns:1fr}
       .cred-list{grid-template-columns:1fr}
@@ -230,6 +234,7 @@
         <a href="../#servicios" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
         <a href="../#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
         <a href="../journal/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="/preguntas-frecuentes/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
         <a href="../#contacto" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
       <div class="language-switch" aria-label="Seleccionar idioma">
@@ -252,6 +257,7 @@
     <a href="../#servicios" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
     <a href="../#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
     <a href="../journal/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+    <a href="/preguntas-frecuentes/" data-es="FAQ" data-en="FAQ">FAQ</a>
     <a href="../#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
   </div>
 </nav>
@@ -265,6 +271,13 @@
     <p class="lead" data-es="Wolfblanc es un estudio de arquitectura y diseño en Madrid, Barcelona y Marbella. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso." data-en="Wolfblanc is an architecture and design studio in Madrid, Barcelona and Marbella. We support homeowners, second-home buyers, investors and businesses with a full-service approach and a rigorous delivery method.">Wolfblanc es un estudio de arquitectura y diseño en Madrid, Barcelona y Marbella. Acompañamos a propietarios, compradores de segunda residencia, inversores y negocios con un servicio completo y un método de entrega riguroso.</p>
   </div>
 </header>
+
+<div class="hero-img">
+  <div class="hero-img-wrap">
+    <img src="../images/Horizon House 01.webp" alt="Estudio de arquitectura Wolfblanc en España, proyecto Horizon House" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <p class="img-caption" data-es="Wolfblanc Architects · España" data-en="Wolfblanc Architects · Spain">Wolfblanc Architects · España</p>
+</div>
 
 <main>
   <article class="wb-body">
@@ -389,7 +402,7 @@
 
 <footer>
   <span data-es="WOLFBLANC® ARCHITECTS S.L. · España · © 2026" data-en="WOLFBLANC® ARCHITECTS S.L. · Spain · © 2026">WOLFBLANC® ARCHITECTS S.L. · España · © 2026</span>
-  <span><a href="../estudio-arquitectura-espana/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="../preguntas-frecuentes/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
+  <span><a href="/estudio-arquitectura-espana/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="/preguntas-frecuentes/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.se" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS DESIGN LAB</a></span>
   <span><a href="mailto:info@wolfblanc.com" style="color:inherit;text-decoration:none">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">wolfblanc.com</a></span>
 </footer>
 
