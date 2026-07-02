@@ -12,22 +12,27 @@
 
 - Aviso legal: https://wolfblanc.es/legal/
 
+## Páginas principales
+
+- Estudio de arquitectura en España: https://wolfblanc.es/estudio-arquitectura-espana/
+- Preguntas frecuentes: https://wolfblanc.es/preguntas-frecuentes/
+
 ## Oficinas
 
 ### Madrid (Oficina principal)
-- Dirección: Calle Velázquez 28, 28001 Madrid, España
+- Dirección: Calle Hermosilla 48, 28001 Madrid, España
 - Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
 
 ### Barcelona
-- Dirección: Carrer de Pau Claris 138, 08009 Barcelona, España
+- Dirección: Carrer de Pallars 193, 08005 Barcelona, España
 - Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
 
 ### Marbella
-- Dirección: Avenida Ricardo Soriano 72, 29601 Marbella, España
+- Dirección: Oasis Business Centre, Carretera de Cádiz km 176, Oficina 9, 29602 Marbella (Málaga), España
 - Teléfono: +34 662 411 064
 - Email: info@wolfblanc.com
 - Horario: lunes-viernes 09:00-18:00
@@ -35,7 +40,7 @@
 ## Credenciales
 
 - COAM N.25160 (Colegio Oficial de Arquitectos de Madrid)
-- COAC (Colegio Oficial de Arquitectos de Cataluña)
+- CEO y arquitecta colegiada: Dolores Herrero González (COAM N.25160)
 - WELL AP certificado (diseño para salud y bienestar)
 - TEE N.168011 (Grecia)
 - ETSAM (Escuela Técnica Superior de Arquitectura de Madrid)
@@ -144,22 +149,27 @@ Nos comunicamos en español, inglés, sueco y griego.
 
 - Legal notice: https://wolfblanc.es/legal/
 
+## Key pages
+
+- Architecture studio in Spain: https://wolfblanc.es/estudio-arquitectura-espana/
+- Frequently asked questions: https://wolfblanc.es/preguntas-frecuentes/
+
 ## Offices
 
 ### Madrid (Main office)
-- Address: Calle Velázquez 28, 28001 Madrid, Spain
+- Address: Calle Hermosilla 48, 28001 Madrid, Spain
 - Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
 ### Barcelona
-- Address: Carrer de Pau Claris 138, 08009 Barcelona, Spain
+- Address: Carrer de Pallars 193, 08005 Barcelona, Spain
 - Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
 
 ### Marbella
-- Address: Avenida Ricardo Soriano 72, 29601 Marbella, Spain
+- Address: Oasis Business Centre, Carretera de Cádiz km 176, Oficina 9, 29602 Marbella (Málaga), Spain
 - Phone: +34 662 411 064
 - Email: info@wolfblanc.com
 - Hours: Monday-Friday 09:00-18:00
@@ -167,7 +177,7 @@ Nos comunicamos en español, inglés, sueco y griego.
 ## Credentials
 
 - COAM N.25160 (Official College of Architects of Madrid)
-- COAC (Official College of Architects of Catalonia)
+- CEO and registered architect: Dolores Herrero González (COAM N.25160)
 - WELL AP certified (design for human health and well-being)
 - TEE N.168011 (Greece)
 - ETSAM (Madrid School of Architecture)
