@@ -50,12 +50,12 @@
 
 ## Servicios
 
-1. Due diligence técnica previa a la compra - Ayudamos a compradores, inversores y family offices a entender una propiedad antes de comprometer capital.
-2. Arquitectura & paisajismo - Edificios y entornos como un sistema integrado, del concepto a la entrega.
-3. Gestión de proyectos / obra nueva / renovación total - Coordinación sólida, comunicación clara y flujos BIM integrados.
+1. Arquitectura - Obra nueva, rehabilitación y transformación de edificios, del análisis a la dirección de obra y la entrega.
+2. Arquitectura del paisaje - Sitios y sistemas vivos que integran usos, vegetación, agua, materiales, clima y construcción.
+3. Urbanismo & masterplanning - Lugares, distritos y entornos públicos con estrategia espacial clara.
 4. Interiores residenciales - Espacios interiores adaptados al uso diario, con atención a la luz, el material y la atmósfera.
 5. Estrategia comercial & interiorismo - Entornos de alto rendimiento para marcas e inversores. Espacios de trabajo, hostelería, showrooms y retail.
-6. Urbanismo & masterplanning - Lugares, distritos y entornos públicos con estrategia espacial clara.
+6. Due diligence técnica previa a la compra - Ayudamos a compradores, inversores y family offices a entender una propiedad antes de comprometer capital.
 7. Consultoría BIM - Precisión digital en cada fase. Coordinación, reducción de riesgos y decisiones más inteligentes.
 8. Consultoría de bienestar - Consultores WELL AP que miden y optimizan aire, luz, acústica y confort.
 9. Visualización arquitectónica - Material visual para decisiones, permisos, ventas y comunicación con inversores.
@@ -64,6 +64,7 @@
 
 - Para inversores y family offices: Arquitectura estratégica para inmuebles de alto rendimiento, con due diligence técnica y ROI medible.
 - Para propietarios: Diseño residencial y renovación con proceso claro.
+- Gestión de proyectos y reforma integral: Coordinación de contratación, presupuesto, plazos y ejecución como servicio especializado dentro de Arquitectura.
 - Villas y segunda residencia: Diseñadas en torno al paisaje, los materiales y la durabilidad.
 - Hostelería y restauración: Concepto, licencias y dirección de obra en un servicio integral.
 - Marcas retail y comerciales: Espacios de marca, flagship stores y oficinas corporativas que traducen la identidad en arquitectura.
@@ -101,7 +102,8 @@ Nos comunicamos en español, inglés, sueco y griego.
 ## Servicios
 
 - https://wolfblanc.es/servicios/due-diligence-tecnica/
-- https://wolfblanc.es/servicios/arquitectura-paisaje/
+- https://wolfblanc.es/servicios/arquitectura/
+- https://wolfblanc.es/servicios/arquitectura-del-paisaje/
 - https://wolfblanc.es/servicios/renovacion-integral-madrid/
 - https://wolfblanc.es/servicios/interiores-residenciales/
 - https://wolfblanc.es/servicios/estrategia-comercial/
@@ -196,20 +198,21 @@ Nos comunicamos en español, inglés, sueco y griego.
 
 ## Services
 
-1. Pre-acquisition technical due diligence - We help buyers, investors, and family offices understand a property before committing capital.
-2. Architecture & landscape - Buildings and environments as one integrated system, from concept to completion.
-3. Project management / new build / total renovation - Strong coordination, clear communication, and integrated BIM workflows.
-4. Residential interiors - Interior environments tailored to daily use, with attention to light, material, and atmosphere.
+1. Architecture - New build, rehabilitation and transformation, from analysis through construction supervision and handover.
+2. Landscape architecture - Sites and living systems integrating use, planting, water, materials, climate and construction.
+3. Urban design & masterplanning - Sites, districts and public environments with clear spatial strategy.
+4. Residential interiors - Interior environments tailored to daily use, with attention to light, material and atmosphere.
 5. Commercial strategy & interiors - High-performance environments for brands and investors. Workspaces, hospitality, showrooms and retail.
-6. Urban design & masterplanning - Sites, districts, and public environments with clear spatial strategy.
-7. BIM consultancy - Digital precision at every stage. Coordination, risk reduction, and smarter decisions.
-8. Well-being consultancy - WELL AP consultants who measure and optimize air, light, acoustics, and comfort.
-9. Architectural visualization - Visual material for decisions, permits, sales, and investor communication.
+6. Pre-acquisition technical due diligence - We help buyers, investors and family offices understand a property before committing capital.
+7. BIM consultancy - Digital precision at every stage. Coordination, risk reduction and smarter decisions.
+8. Well-being consultancy - WELL AP consultants who measure and optimize air, light, acoustics and comfort.
+9. Architectural visualization - Visual material for decisions, permits, sales and investor communication.
 
 ## Specialized services
 
 - For investors and family offices: Strategic architecture for high-performing real estate, with technical due diligence and measurable ROI.
 - For homeowners: Residential design and renovation with a clear process.
+- Project management and total renovation: Procurement, budget, programme and delivery coordination as a specialist service within Architecture.
 - Villas and second homes: Designed around landscape, materials, and durability.
 - Hospitality and restaurants: Concept, licences, and site supervision as one integrated service.
 - Retail and commercial brands: Branded spaces, flagship stores and corporate offices that translate identity into architecture.
@@ -247,7 +250,8 @@ We communicate in Spanish, English, Swedish and Greek.
 ## Services
 
 - https://wolfblanc.es/servicios/due-diligence-tecnica/
-- https://wolfblanc.es/servicios/arquitectura-paisaje/
+- https://wolfblanc.es/servicios/arquitectura/
+- https://wolfblanc.es/servicios/arquitectura-del-paisaje/
 - https://wolfblanc.es/servicios/renovacion-integral-madrid/
 - https://wolfblanc.es/servicios/interiores-residenciales/
 - https://wolfblanc.es/servicios/estrategia-comercial/
