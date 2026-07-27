@@ -1,92 +1,108 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MREN7QTJ7G"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MREN7QTJ7G');</script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex">
-    <title>Página no encontrada - WOLFBLANC ARCHITECTS</title>
-    <style>
-      body{margin:0;background:#f5f0eb;color:#0d0b0a;font-family:Helvetica,Arial,sans-serif}
-      .section{max-width:960px;margin:0 auto;padding:96px 24px}
-      .section-label{color:#9a6840;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-      h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,8vw,104px);line-height:.95;font-weight:400}
-      .hero-text{color:#6b6057;font-size:clamp(18px,2vw,24px)}
-      .button{display:inline-flex;align-items:center;min-height:50px;margin-top:20px;padding:14px 18px;background:#0d0b0a;color:#f5f0eb;text-decoration:none;font-size:12px;font-weight:800}
-      footer{border-top:1px solid rgba(154,104,64,.18);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:#6b6057}
-      footer>span{flex:1 1 0}
-      footer>span:nth-child(2){text-align:center}
-      footer>span:nth-child(3){text-align:right}
-      footer a{color:inherit;text-decoration:none}
-      footer a:hover{color:#9a6840}
-      .cookie-banner{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);display:flex;align-items:center;justify-content:center;gap:14px;padding:8px 10px 8px 16px;border:1px solid rgba(154,104,64,.18);background:rgba(154,104,64,.18);backdrop-filter:blur(16px);border-radius:999px;color:#0d0b0a;box-shadow:0 18px 45px rgba(13,11,10,.08)}
-      .cookie-banner[hidden]{display:none}
-      .cookie-copy{display:flex;align-items:center;gap:9px;min-width:0}
-      .cookie-title,.cookie-btn{font-size:.6rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
-      .cookie-link{font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:#6b6057;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
-      .cookie-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
-      .cookie-btn{border:0;background:transparent;color:#6b6057;padding:6px 9px;border-radius:999px;font-family:inherit;font-weight:300;line-height:1;cursor:pointer;appearance:none;-webkit-appearance:none}
-      .cookie-btn.accept{background:#9a6840;color:#f5f0eb}
-      @media(max-width:760px){footer>span{flex:0 0 100%;text-align:center}footer>span:nth-child(3){text-align:center}}
-      @media(max-width:520px){.cookie-banner{bottom:16px;max-width:calc(100vw - 20px);padding:8px 9px 8px 12px;gap:7px}.cookie-copy{gap:7px}.cookie-title,.cookie-btn{font-size:.5rem;letter-spacing:.12em}.cookie-link{font-size:.46rem;letter-spacing:.12em}.cookie-actions{gap:6px}.cookie-btn{padding:6px 7px}.cookie-btn.accept{padding:6px 9px}}
-      @media(max-width:380px){.cookie-banner{flex-wrap:wrap;border-radius:18px;padding:9px 10px;row-gap:8px}.cookie-copy,.cookie-actions{justify-content:center}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Página no encontrada - WOLFBLANC ARCHITECTS</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <style>
+    @keyframes wbDrift{from{background-position:0 0}to{background-position:80px 80px}}
+    :root{--bg:#f5f0eb;--text-primary:#0d0b0a;--text-secondary:#6b6057;--accent:#9a6840;--line:rgba(154,104,64,.14);--nav-bg:rgba(245,240,235,.94)}
+    html.dark{--bg:#0d0b0a;--text-primary:#f5f0eb;--text-secondary:#b9aa9d;--accent:#c8a882;--line:rgba(200,168,130,.14);--nav-bg:rgba(13,11,10,.94)}
+    *{box-sizing:border-box;margin:0;padding:0}
     html{overflow-y:scroll}
+    body{min-height:100vh;background:var(--bg);color:var(--text-primary);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:300;letter-spacing:.02em;transition:background .4s,color .4s}
+    a{color:inherit;text-decoration:none;transition:color .3s}
+    button{font-family:inherit}
+    nav{position:fixed;inset:0 0 auto;z-index:1000;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+    nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(12px);border-bottom-color:var(--line)}
+    .nav-bar{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 2rem}
+    .nav-logo{font-size:.8rem;letter-spacing:.2em;white-space:nowrap}
+    .nav-logo:hover,.nav-link:hover,.theme-btn:hover{color:var(--accent)}
+    .nav-right,.nav-links{display:flex;align-items:center}
+    .nav-right{gap:20px}.nav-links{gap:22px}
+    .nav-link{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+    .language-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:3px}
+    .lang-btn{border:0;background:transparent;color:var(--text-secondary);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 6px;cursor:pointer}
+    .lang-btn.active{color:var(--accent)}
+    .theme-btn,.burger-btn{border:0;background:none;color:var(--text-secondary);display:flex;align-items:center;justify-content:center;cursor:pointer}
+    .theme-btn{padding:8px}.burger-btn{display:none;width:40px;height:40px}
+    .mob-menu{display:none;border-top:1px solid var(--line);background:var(--nav-bg);backdrop-filter:blur(12px)}
+    .mob-menu a{display:block;padding:16px 1.25rem;border-bottom:1px solid var(--line);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+    .error-page{position:relative;min-height:calc(100vh - 146px);display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+    .error-grid{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,var(--line) 0,transparent 1px,transparent 80px),repeating-linear-gradient(90deg,var(--line) 0,transparent 1px,transparent 80px);background-size:80px 80px;animation:wbDrift 20s linear infinite;pointer-events:none}
+    .error-inner{position:relative;width:100%;max-width:1100px;margin:0 auto;padding:132px 48px 88px}
+    .section-label{display:block;color:var(--accent);font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:22px}
+    h1{max-width:15ch;font-size:clamp(2.2rem,6vw,5rem);font-weight:200;letter-spacing:.06em;line-height:1.05;text-transform:uppercase}
+    .hero-text{max-width:48ch;margin-top:26px;color:var(--text-secondary);font-size:1.05rem;line-height:1.7}
+    .button{display:inline-flex;align-items:center;margin-top:34px;padding:15px 28px;background:var(--text-primary);color:var(--bg);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase}
+    .button:hover{opacity:.82}
+    footer{border-top:1px solid var(--line);padding:2rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-secondary)}
+    footer>span{flex:1 1 0}footer>span:nth-child(2){text-align:center}footer>span:nth-child(3){text-align:right}
+    footer a:hover{color:var(--accent)}
+    .cookie-banner{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1200;width:max-content;max-width:calc(100vw - 32px);display:flex;align-items:center;gap:14px;padding:8px 10px 8px 16px;border:1px solid var(--line);background:rgba(154,104,64,.18);backdrop-filter:blur(16px);border-radius:999px;color:var(--text-primary);box-shadow:0 18px 45px rgba(13,11,10,.08)}
+    html.dark .cookie-banner{background:rgba(200,168,130,.16);box-shadow:0 18px 45px rgba(0,0,0,.28)}
+    .cookie-banner[hidden]{display:none}.cookie-copy,.cookie-actions{display:flex;align-items:center}.cookie-copy{gap:9px}.cookie-actions{gap:8px}
+    .cookie-title,.cookie-btn{font-size:.6rem;font-weight:300;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+    .cookie-link{font-size:.5rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);text-decoration:underline;text-underline-offset:4px}
+    .cookie-btn{border:0;background:transparent;color:var(--text-secondary);padding:6px 9px;border-radius:999px;cursor:pointer}.cookie-btn.accept{background:var(--accent);color:var(--bg)}
+    @media(max-width:860px){.nav-bar{padding:0 1.25rem}.nav-links{display:none}.burger-btn{display:flex}.error-inner{padding-left:24px;padding-right:24px}footer{flex-direction:column;gap:18px;padding:1.5rem 1.25rem}footer>span,footer>span:nth-child(2),footer>span:nth-child(3){text-align:center}}
+    @media(max-width:520px){.cookie-banner{bottom:16px;gap:7px;padding:8px 9px 8px 12px}.cookie-title,.cookie-btn{font-size:.5rem}.cookie-link{font-size:.46rem}.cookie-actions{gap:6px}.cookie-btn{padding:6px 7px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
-  </head>
-  <body>
-    <main class="section">
-      <p class="section-label">404</p>
-      <h1>Página no encontrada.</h1>
-      <p class="hero-text">Vuelve a la página principal de Wolfblanc Architects Spain.</p>
-      <a class="button" href="/">Wolfblanc.es</a>
-    </main>
-    <footer>
-      <span>WOLFBLANC® ARCHITECTS S.L. · España · © 2026</span>
-      <span><a href="/estudio-arquitectura-espana/" style="color:inherit;text-decoration:none" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="/preguntas-frecuentes/" style="color:inherit;text-decoration:none" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" style="color:inherit;text-decoration:none;opacity:.65" data-es="Aviso Legal" data-en="Legal Notice">Aviso Legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:.65">WEB BY EOLOS</a></span>
-      <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer">wolfblanc.com</a></span>
-    </footer>
-    <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" hidden>
-      <div class="cookie-copy">
-        <span class="cookie-title">Usamos cookies</span>
-        <a class="cookie-link" href="/legal/#cookies">Más info</a>
+</head>
+<body>
+<nav id="nav">
+  <div class="nav-bar">
+    <a href="/" class="nav-logo">WOLFBLANC</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/estudio-arquitectura-espana/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
+        <a href="/#proyectos" class="nav-link" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+        <a href="/servicios/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
+        <a href="/#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+        <a href="/journal/" class="nav-link">JOURNAL</a>
+        <a href="/preguntas-frecuentes/" class="nav-link">FAQ</a>
+        <a href="/#contacto" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
-      <div class="cookie-actions">
-        <button class="cookie-btn" type="button" data-cookie-choice="reject">Rechazar</button>
-        <button class="cookie-btn accept" type="button" data-cookie-choice="accept">Aceptar</button>
-      </div>
+      <div class="language-switch" aria-label="Seleccionar idioma"><button class="lang-btn active" type="button" data-lang-switch="es">ES</button><button class="lang-btn" type="button" data-lang-switch="en">EN</button></div>
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Cambiar tema"><svg id="im" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg id="is" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
+      <button class="burger-btn" id="burger-btn" type="button" aria-label="Menú"><svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg><svg id="burger-close" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
     </div>
-    <script>
-    (function(){
-      var banner=document.getElementById('cookie-banner');
-      if(!banner)return;
-      var storageKey='wb-cookie-choice';
-      var consentDays=180;
-      function expiryTime(){return Date.now()+consentDays*24*60*60*1000;}
-      function readChoice(){
-        var raw=localStorage.getItem(storageKey);
-        if(!raw)return null;
-        try{
-          var saved=JSON.parse(raw);
-          if(saved&&saved.expires&&saved.expires>Date.now())return saved.choice||'saved';
-          localStorage.removeItem(storageKey);
-          return null;
-        }catch(e){
-          localStorage.setItem(storageKey,JSON.stringify({choice:raw,expires:expiryTime()}));
-          return raw;
-        }
-      }
-      function closeBanner(choice){
-        localStorage.setItem(storageKey,JSON.stringify({choice:choice,expires:expiryTime()}));
-        banner.hidden=true;
-        document.body.classList.remove('cookie-banner-visible');
-      }
-      if(!readChoice()){banner.hidden=false;document.body.classList.add('cookie-banner-visible');}
-      banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){
-        btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});
-      });
-    })();
-    </script>
-  </body>
+  </div>
+  <div class="mob-menu" id="mob-menu">
+    <a href="/estudio-arquitectura-espana/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a><a href="/#proyectos" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a><a href="/servicios/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a><a href="/#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a><a href="/journal/">JOURNAL</a><a href="/preguntas-frecuentes/">FAQ</a><a href="/#contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+  </div>
+</nav>
+<main class="error-page">
+  <div class="error-grid"></div>
+  <div class="error-inner">
+    <span class="section-label">404</span>
+    <h1 data-es="PÁGINA NO ENCONTRADA." data-en="PAGE NOT FOUND.">PÁGINA NO ENCONTRADA.</h1>
+    <p class="hero-text" data-es="La página puede haberse movido. Vuelve a Wolfblanc Architects España." data-en="The page may have moved. Return to Wolfblanc Architects Spain.">La página puede haberse movido. Vuelve a Wolfblanc Architects España.</p>
+    <a class="button" href="/" data-es="Página principal" data-en="Homepage">Página principal</a>
+  </div>
+</main>
+<footer>
+  <span data-es="WOLFBLANC® ARCHITECTS S.L. · España · © 2026" data-en="WOLFBLANC® ARCHITECTS S.L. · Spain · © 2026">WOLFBLANC® ARCHITECTS S.L. · España · © 2026</span>
+  <span><a href="/estudio-arquitectura-espana/" data-es="Estudio" data-en="Studio">Estudio</a> · <a href="/servicios/" data-es="Servicios" data-en="Services">Servicios</a> · <a href="/preguntas-frecuentes/" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a> · <a href="/legal/" data-es="Aviso legal" data-en="Legal notice">Aviso legal</a> · <a href="https://eolos.es/" target="_blank" rel="noopener">WEB BY EOLOS</a></span>
+  <span><a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a> · <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer">wolfblanc.com</a></span>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Aviso de cookies" hidden><div class="cookie-copy"><span class="cookie-title" data-es="Usamos cookies" data-en="We use cookies">Usamos cookies</span><a class="cookie-link" href="/legal/#cookies" data-es="Más info" data-en="More info">Más info</a></div><div class="cookie-actions"><button class="cookie-btn" type="button" data-cookie-choice="reject" data-es="Rechazar" data-en="Reject">Rechazar</button><button class="cookie-btn accept" type="button" data-cookie-choice="accept" data-es="Aceptar" data-en="Accept">Aceptar</button></div></div>
+<script>
+(function(){
+  var root=document.documentElement,theme=document.getElementById('theme-btn'),moon=document.getElementById('im'),sun=document.getElementById('is'),burger=document.getElementById('burger-btn'),menu=document.getElementById('mob-menu'),openIcon=document.getElementById('burger-open'),closeIcon=document.getElementById('burger-close'),banner=document.getElementById('cookie-banner');
+  function setTheme(dark){root.classList.toggle('dark',dark);moon.style.display=dark?'none':'';sun.style.display=dark?'':'none';localStorage.setItem('wb-theme',dark?'dark':'light')}
+  setTheme(localStorage.getItem('wb-theme')==='dark');theme.addEventListener('click',function(){setTheme(!root.classList.contains('dark'))});
+  function setLang(lang){document.querySelectorAll('[data-es][data-en]').forEach(function(el){el.innerHTML=el.getAttribute('data-'+lang)});document.querySelectorAll('[data-lang-switch]').forEach(function(el){el.classList.toggle('active',el.getAttribute('data-lang-switch')===lang)});root.lang=lang;localStorage.setItem('wb-es-lang',lang)}
+  setLang(localStorage.getItem('wb-es-lang')||'es');document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){setLang(btn.getAttribute('data-lang-switch'))})});
+  burger.addEventListener('click',function(){var visible=menu.style.display==='block';menu.style.display=visible?'none':'block';openIcon.style.display=visible?'':'none';closeIcon.style.display=visible?'none':''});
+  window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',scrollY>20)},{passive:true});
+  var key='wb-cookie-choice',raw=localStorage.getItem(key),valid=false;try{var saved=JSON.parse(raw);valid=saved&&saved.expires>Date.now()}catch(e){}
+  if(!valid)banner.hidden=false;banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){localStorage.setItem(key,JSON.stringify({choice:btn.getAttribute('data-cookie-choice'),expires:Date.now()+180*86400000}));banner.hidden=true})});
+})();
+</script>
+</body>
 </html>
