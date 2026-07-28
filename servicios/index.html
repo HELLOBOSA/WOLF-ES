@@ -119,6 +119,16 @@
     .sv-title{font-size:1.02rem;font-weight:400;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;color:var(--text);margin:0 0 14px}
     .sv-desc{font-size:.98rem;line-height:1.7;letter-spacing:.005em;color:var(--text2);margin:0 0 22px}
     .wb-go{margin-top:auto;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);transition:color .3s}
+    .audience-pathways{margin-top:88px;padding-top:36px;border-top:1px solid var(--line)}
+    .audience-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:32px}
+    .audience-head h2{font-size:clamp(1.35rem,3vw,2rem);font-weight:200;text-transform:uppercase;letter-spacing:.06em;line-height:1.25}
+    .audience-head p{color:var(--text2);max-width:48ch;justify-self:end}
+    .audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .audience-card{display:flex;flex-direction:column;background:var(--bg);padding:30px;min-height:190px;transition:background .3s}
+    .audience-card:hover{background:rgba(148,133,106,.05)}
+    .audience-card h3{font-size:1rem;font-weight:400;text-transform:uppercase;letter-spacing:.06em;margin:0 0 14px}
+    .audience-card p{color:var(--text2);line-height:1.7;margin-bottom:20px}
+    @media(max-width:640px){.audience-head,.audience-grid{grid-template-columns:1fr}.audience-head p{justify-self:start}}
     .cta-section{position:relative;border-top:1px solid var(--line);margin-top:96px;overflow:hidden;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
     .cta-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;font-size:15vw;font-weight:100;color:var(--accent);opacity:.03;text-transform:uppercase}
     .cta-inner{position:relative;max-width:900px;margin:0 auto;padding:104px 32px;text-align:center}
@@ -317,6 +327,19 @@
       </div>
     </a>
   </div>
+
+  <section class="audience-pathways" aria-labelledby="audience-pathways-title">
+    <div class="audience-head">
+      <h2 id="audience-pathways-title" data-es="Servicios según su proyecto" data-en="Services shaped around your project">Servicios según su proyecto</h2>
+      <p data-es="Rutas directas para inversores, propietarios, dueños de segundas residencias, empresas y operadores de hospitality en España." data-en="Direct pathways for investors, homeowners, second-home owners, businesses and hospitality operators in Spain.">Rutas directas para inversores, propietarios, dueños de segundas residencias, empresas y operadores de hospitality en España.</p>
+    </div>
+    <div class="audience-grid">
+      <a class="audience-card" href="./para-inversores/"><h3 data-es="Para inversores" data-en="For investors">Para inversores</h3><p data-es="Viabilidad, due diligence, arquitectura y decisiones orientadas al valor del activo." data-en="Feasibility, due diligence, architecture and decisions focused on asset value.">Viabilidad, due diligence, arquitectura y decisiones orientadas al valor del activo.</p><span class="wb-go" data-es="Ver servicio →" data-en="See service →">Ver servicio →</span></a>
+      <a class="audience-card" href="./para-propietarios/"><h3 data-es="Para propietarios" data-en="For homeowners">Para propietarios</h3><p data-es="Diseño residencial y reforma con claridad sobre licencias, presupuesto y construcción." data-en="Residential design and renovation with clarity across approvals, budget and construction.">Diseño residencial y reforma con claridad sobre licencias, presupuesto y construcción.</p><span class="wb-go" data-es="Ver servicio →" data-en="See service →">Ver servicio →</span></a>
+      <a class="audience-card" href="./villas-segunda-residencia/"><h3 data-es="Villas y segunda residencia" data-en="Villas and second homes">Villas y segunda residencia</h3><p data-es="Viviendas vinculadas al paisaje, con una ejecución clara tanto si el propietario está cerca como fuera." data-en="Homes connected to landscape, with clear delivery whether the owner is local or abroad.">Viviendas vinculadas al paisaje, con una ejecución clara tanto si el propietario está cerca como fuera.</p><span class="wb-go" data-es="Ver servicio →" data-en="See service →">Ver servicio →</span></a>
+      <a class="audience-card" href="./interiores-comerciales-hosteleria/"><h3 data-es="Para empresas y hospitality" data-en="For businesses &amp; hospitality">Para empresas y hospitality</h3><p data-es="Estrategia espacial e interiores para hospitality, retail, workplaces y marcas donde el diseño debe rendir." data-en="Spatial strategy and interiors for hospitality, retail, workplaces and brands where design must perform.">Estrategia espacial e interiores para hospitality, retail, workplaces y marcas donde el diseño debe rendir.</p><span class="wb-go" data-es="Ver servicio →" data-en="See service →">Ver servicio →</span></a>
+    </div>
+  </section>
 
   <section class="cta-section">
     <div class="cta-bg">WOLFBLANC</div>
