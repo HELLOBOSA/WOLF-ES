@@ -24,6 +24,24 @@
   <meta name="twitter:image" content="https://wolfblanc.es/images/Casa%20Boadilla%2001.webp">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="stylesheet" href="../assets/contact-page.css?v=20260728f">
+  
+  <!-- CSS injected to match homepage navigation perfectly -->
+  <style>
+    .language-switch { display: inline-flex; align-items: center; gap: 4px; border: 1px solid var(--line); padding: 3px; }
+    .lang-btn { background: transparent; border: 0; color: var(--text-secondary); font-size: .58rem; letter-spacing: .16em; text-transform: uppercase; padding: 4px 6px; cursor: pointer; transition: color .3s; font-family: inherit; }
+    .lang-btn:hover, .lang-btn.active { color: var(--accent); }
+    .theme-btn { background: none; border: none; cursor: pointer; color: var(--text-secondary); display: flex; align-items: center; padding: 8px; transition: color .3s; }
+    .theme-btn:hover { color: var(--text-primary); }
+    .burger-btn { background: none; border: none; cursor: pointer; color: var(--text-primary); align-items: center; justify-content: center; padding: 8px; width: 40px; height: 40px; }
+    .burger-btn:hover { color: var(--accent); }
+    .mob-menu a { display: block; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--text-primary); padding: 16px 1.1rem; border-bottom: 1px solid var(--line); text-decoration: none; transition: color .3s; }
+    .mob-menu a:last-child { border-bottom: 0; }
+    .mob-menu a:hover { color: var(--accent); }
+    @media(max-width:860px){
+      .burger-btn { display: flex; }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
