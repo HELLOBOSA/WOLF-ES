@@ -86,6 +86,10 @@
       values[key]=journey[key]||'';
     });
 
+    if(form.querySelector('input[name="privacy_consent"]:checked')){
+      values.consent_timestamp=new Date().toISOString();
+    }
+
     Object.keys(values).forEach(function(name){
       hiddenField(form,name).value=values[name];
     });

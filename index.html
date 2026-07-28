@@ -553,7 +553,7 @@
       <a href="#proceso" class="nav-link" onclick="ss(event,'proceso')" data-s="proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
       <a href="journal/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
       <a href="/preguntas-frecuentes/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-      <a href="#contacto" class="nav-link" onclick="ss(event,'contacto')" data-s="contacto" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+      <a href="contacto/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
     </div>
     <div class="nav-mobile" style="display:none">
     </div>
@@ -578,7 +578,7 @@
     <a href="#proceso" onclick="ss(event,'proceso');closeMobMenu()" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
     <a href="journal/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
     <a href="/preguntas-frecuentes/" data-es="FAQ" data-en="FAQ">FAQ</a>
-    <a href="#contacto" onclick="ss(event,'contacto');closeMobMenu()" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+    <a href="contacto/" onclick="closeMobMenu()" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
   </div>
 </nav>
 
@@ -595,7 +595,7 @@
     <p class="hm fade-in d2" data-es="COAM N.25160 · WELL AP · Madrid · Barcelona · Marbella" data-en="COAM N.25160 · WELL AP · Madrid · Barcelona · Marbella">COAM N.25160 · WELL AP · Madrid · Barcelona · Marbella</p>
     <p class="hl fade-in d3" data-es="Wolfblanc en España. Diseñamos viviendas, reformas, propiedades de inversión y proyectos de hostelería con experiencia internacional y precisión nórdica." data-en="Wolfblanc in Spain. We design homes, renovations, investment properties and hospitality projects with international experience and Nordic precision.">Wolfblanc en España. Diseñamos viviendas, reformas, propiedades de inversión y proyectos de hostelería con experiencia internacional y precisión nórdica.</p>
     <div class="ha fade-in d4">
-      <a href="#contacto" class="btn-outline" onclick="ss(event,'contacto')" data-es="RESERVAR LLAMADA GRATUITA" data-en="BOOK A FREE CALL">RESERVAR LLAMADA GRATUITA</a>
+      <a href="https://cal.com/wolfblanc/30min" class="btn-outline" data-cal-trigger data-es="RESERVAR LLAMADA DE 30 MIN" data-en="BOOK A 30-MINUTE CALL">RESERVAR LLAMADA DE 30 MIN</a>
       <a href="#proyectos" class="hlink" onclick="ss(event,'proyectos')">
         <span data-es="Ver proyectos seleccionados" data-en="View selected work">Ver proyectos seleccionados</span>
       </a>
@@ -872,7 +872,7 @@
   <div class="cta-bg" data-es="PROYECTOS" data-en="WORK">PROYECTOS</div>
   <div class="cta-inner reveal">
     <p data-es="Todo buen proyecto comienza con una conversación." data-en="Every good project starts with a conversation.">Todo buen proyecto comienza con una conversación.</p>
-    <a href="#contacto" onclick="ss(event,'contacto')" class="btn-outline" data-es="HABLEMOS →" data-en="TALK TO US →">HABLEMOS →</a>
+    <a href="contacto/#proyecto" class="btn-outline" data-es="HABLEMOS →" data-en="TALK TO US →">HABLEMOS →</a>
   </div>
 </div>
 
@@ -948,6 +948,7 @@
 </button>
 
 <script src="assets/form-context.js"></script>
+<script src="assets/cal-booking.js?v=20260728"></script>
 <script>
   const H = document.documentElement;
   let light = localStorage.getItem('wb-theme') !== 'dark';

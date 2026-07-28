@@ -295,6 +295,7 @@ We communicate in Spanish, English, Swedish and Greek.
 
 ## Contact
 
+- Contact page: https://wolfblanc.es/contacto/
 - Email: info@wolfblanc.com
 - Phone: +34 662 411 064
 - Global website: https://wolfblanc.com
