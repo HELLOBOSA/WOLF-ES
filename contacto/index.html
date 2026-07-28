@@ -39,7 +39,7 @@
   
   <link rel="stylesheet" href="../assets/contact-page.css?v=20260728f">
   
-  <!-- IMPENETRABLE NAV CSS TO PERFECTLY CLONE HOMEPAGE (Overrides contact-page.css) -->
+  <!-- EXACT HOMEPAGE NAV CSS LOCK (Overrides contact-page.css button/font resets) -->
   <style>
     :root {
       --bg:#f5f0eb; --text-primary:#0d0b0a; --text-secondary:#6b6057;
@@ -56,7 +56,6 @@
     
     #nav, #nav *, #nav *::before, #nav *::after {
       box-sizing: border-box !important;
-      margin: 0; padding: 0;
     }
     
     #nav {
@@ -78,13 +77,14 @@
     #nav .nav-logo:hover { color: var(--accent) !important; }
     #nav .nav-right { display: flex !important; align-items: center !important; gap: 20px !important; }
     #nav .nav-links { display: flex !important; align-items: center !important; gap: 22px !important; }
-    #nav .nav-link { font-size: .58rem !important; letter-spacing: .14em !important; text-transform: uppercase !important; font-weight: 300 !important; color: var(--text-secondary) !important; text-decoration: none !important; }
+    #nav .nav-link { font-size: .58rem !important; letter-spacing: .14em !important; text-transform: uppercase !important; font-weight: 300 !important; color: var(--text-secondary) !important; text-decoration: none !important; transition: color .3s !important; }
     #nav .nav-link:hover, #nav .nav-link.active { color: var(--text-primary) !important; }
     
     #nav .language-switch { 
       display: inline-flex !important; align-items: center !important; gap: 4px !important; 
       border: 1px solid var(--line) !important; padding: 3px !important; 
-      border-radius: 0 !important; background: transparent !important;
+      border-radius: 0 !important; background: transparent !important; margin: 0 !important;
+      height: auto !important;
     }
     
     #nav .lang-btn { 
@@ -92,7 +92,7 @@
       font-size: .58rem !important; letter-spacing: .16em !important; text-transform: uppercase !important; 
       padding: 4px 6px !important; cursor: pointer !important; transition: color .3s !important; 
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-weight: 300 !important; 
-      border-radius: 0 !important; box-shadow: none !important; line-height: 1.85 !important;
+      border-radius: 0 !important; box-shadow: none !important; line-height: 1.85 !important; margin: 0 !important;
       appearance: none !important; -webkit-appearance: none !important;
     }
     #nav .lang-btn:hover, #nav .lang-btn.active { color: var(--accent) !important; }
@@ -101,7 +101,7 @@
       background: none !important; border: none !important; cursor: pointer !important; 
       color: var(--text-secondary) !important; display: flex !important; align-items: center !important; 
       padding: 8px !important; transition: color .3s !important; border-radius: 0 !important; 
-      box-shadow: none !important; appearance: none !important; -webkit-appearance: none !important;
+      box-shadow: none !important; appearance: none !important; -webkit-appearance: none !important; margin: 0 !important;
     }
     #nav .theme-btn:hover { color: var(--text-primary) !important; }
     
@@ -109,7 +109,7 @@
       display: none; background: none !important; border: none !important; cursor: pointer !important; 
       color: var(--text-primary) !important; align-items: center !important; justify-content: center !important; 
       padding: 8px !important; width: 40px !important; height: 40px !important; border-radius: 0 !important;
-      box-shadow: none !important; appearance: none !important; -webkit-appearance: none !important;
+      box-shadow: none !important; appearance: none !important; -webkit-appearance: none !important; margin: 0 !important;
     }
     #nav .burger-btn:hover { color: var(--accent) !important; }
     
@@ -215,24 +215,24 @@
           <button class="lang-btn active" type="button" data-lang-switch="es">ES</button>
           <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
         </div>
-        <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme">
-          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg id="sun-icon" hidden xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          <svg id="im" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="is" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
-        <button class="burger-btn" id="burger-btn" type="button" aria-label="Menú">
+        <button class="burger-btn" id="burger-btn" aria-label="Menú">
           <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-          <svg id="burger-close" hidden xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+          <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
         </button>
       </div>
     </div>
     <div class="mob-menu" id="mob-menu">
       <a href="/estudio-arquitectura-espana/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-      <a href="/#proyectos" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+      <a href="/#proyectos" onclick="closeMobMenu()" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
       <a href="/servicios/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-      <a href="/#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-      <a href="/journal/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+      <a href="/#proceso" onclick="closeMobMenu()" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+      <a href="/journal/" onclick="closeMobMenu()" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
       <a href="/preguntas-frecuentes/" data-es="FAQ" data-en="FAQ">FAQ</a>
-      <a href="/contacto/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+      <a href="/contacto/" onclick="closeMobMenu()" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
     </div>
   </nav>
 
@@ -275,7 +275,6 @@
           <address>Oasis Business Centre<br>Ctra. de Cádiz km 176, Of. 9<br>29602 Marbella, España</address>
         </div>
       </div>
-
     </div>
 
     <div class="cal-wrap">
