@@ -94,40 +94,41 @@
 <body>
   <nav id="nav">
     <div class="nav-bar">
-      <a href="/" class="nav-logo">WOLFBLANC</a>
-      <div class="nav-right">
-        <div class="nav-links">
-          <a href="/estudio-arquitectura-espana/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-          <a href="/#proyectos" class="nav-link" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
-          <a href="/servicios/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-          <a href="/#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
-          <a href="/journal/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
-          <a href="/preguntas-frecuentes/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
-          <a href="/contacto/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
-        </div>
-        <div class="nav-mobile" style="display:none"></div>
-        <div class="language-switch" aria-label="Seleccionar idioma">
-          <button class="lang-btn active" type="button" data-lang-switch="es">ES</button>
-          <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
-        </div>
-        <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle theme">
-          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg id="sun-icon" hidden xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-        <button class="burger-btn" id="burger-btn" type="button" aria-label="Menú">
-          <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-          <svg id="burger-close" hidden xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-        </button>
+    <a href="/" class="nav-logo">WOLFBLANC</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="/estudio-arquitectura-espana/" class="nav-link" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
+        <a href="/#proyectos" class="nav-link" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+        <a href="/servicios/" class="nav-link" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
+        <a href="/#proceso" class="nav-link" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+        <a href="/journal/" class="nav-link" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
+        <a href="/preguntas-frecuentes/" class="nav-link" data-es="FAQ" data-en="FAQ">FAQ</a>
+        <a href="/contacto/" class="nav-link" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
       </div>
+      <div class="nav-mobile" style="display:none">
+      </div>
+      <div class="language-switch" aria-label="Seleccionar idioma">
+        <button class="lang-btn active" type="button" data-lang-switch="es">ES</button>
+        <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
+      </div>
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+        <svg id="im" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="is" style="display:none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+        <button class="burger-btn" id="burger-btn" aria-label="Menú">
+          <svg id="burger-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+          <svg id="burger-close-icon" style="display:none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+        </button>
+    </div>
     </div>
     <div class="mob-menu" id="mob-menu">
       <a href="/estudio-arquitectura-espana/" data-es="ESTUDIO" data-en="STUDIO">ESTUDIO</a>
-      <a href="/#proyectos" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
+      <a href="/#proyectos" onclick="closeMobMenu()" data-es="GALERÍA" data-en="GALLERY">GALERÍA</a>
       <a href="/servicios/" data-es="SERVICIOS" data-en="SERVICES">SERVICIOS</a>
-      <a href="/#proceso" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
+      <a href="/#proceso" onclick="closeMobMenu()" data-es="PROCESO" data-en="PROCESS">PROCESO</a>
       <a href="/journal/" data-es="JOURNAL" data-en="JOURNAL">JOURNAL</a>
       <a href="/preguntas-frecuentes/" data-es="FAQ" data-en="FAQ">FAQ</a>
-      <a href="/contacto/" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
+      <a href="/contacto/" onclick="closeMobMenu()" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a>
     </div>
   </nav>
 
@@ -242,13 +243,6 @@
     var root=document.documentElement;
     var nav=document.getElementById('nav');
     var btt=document.getElementById('btt');
-    var burger=document.getElementById('burger-btn');
-    var menu=document.getElementById('mob-menu');
-    var burgerOpen=document.getElementById('burger-open');
-    var burgerClose=document.getElementById('burger-close');
-    var themeButton=document.getElementById('theme-btn');
-    var moon=document.getElementById('moon-icon');
-    var sun=document.getElementById('sun-icon');
     var langButtons=document.querySelectorAll('[data-lang-switch]');
 
     function setLanguage(lang){
@@ -261,24 +255,54 @@
     langButtons.forEach(function(btn){btn.addEventListener('click',function(){setLanguage(btn.dataset.langSwitch);});});
     setLanguage(localStorage.getItem('wb-es-lang')||'es');
 
-    function showTheme(){
-      var dark=root.classList.contains('wb-dark');
-      moon.hidden=dark;
-      sun.hidden=!dark;
+    // Theme Switcher (Unified with Homepage classes & IDs)
+    var light = localStorage.getItem('wb-theme') !== 'dark';
+    if (!light) setDark();
+    function setDark(){
+      root.classList.add('dark', 'wb-dark');
+      show('is');
+      hide('im');
     }
-    if(localStorage.getItem('wb-theme')==='dark')root.classList.add('wb-dark');
-    showTheme();
-    themeButton.addEventListener('click',function(){
-      root.classList.toggle('wb-dark');
-      localStorage.setItem('wb-theme',root.classList.contains('wb-dark')?'dark':'light');
-      showTheme();
-    });
-    burger.addEventListener('click',function(){
-      var open=menu.style.display==='block';
-      menu.style.display=open?'none':'block';
-      burgerOpen.hidden=!open;
-      burgerClose.hidden=open;
-    });
+    function setLight(){
+      root.classList.remove('dark', 'wb-dark');
+      hide('is');
+      show('im');
+    }
+    function show(id){
+      var e=document.getElementById(id);
+      if(e) e.style.display='';
+    }
+    function hide(id){
+      var e=document.getElementById(id);
+      if(e) e.style.display='none';
+    }
+    window.toggleTheme = function(){
+      light = !light;
+      light ? setLight() : setDark();
+      localStorage.setItem('wb-theme', light ? 'light' : 'dark');
+    };
+
+    // Mobile Burger Menu (Unified with Homepage logic & IDs)
+    var burgerBtn = document.getElementById('burger-btn');
+    var mobMenu = document.getElementById('mob-menu');
+    var burgerOpenIcon = document.getElementById('burger-open');
+    var burgerCloseIconEl = document.getElementById('burger-close-icon');
+    var mobMenuOpen = false;
+    window.closeMobMenu = function(){
+      mobMenuOpen = false;
+      if(mobMenu) mobMenu.style.display = 'none';
+      if(burgerOpenIcon) burgerOpenIcon.style.display = '';
+      if(burgerCloseIconEl) burgerCloseIconEl.style.display = 'none';
+    };
+    if(burgerBtn){
+      burgerBtn.addEventListener('click', function(){
+        mobMenuOpen = !mobMenuOpen;
+        if(mobMenu) mobMenu.style.display = mobMenuOpen ? 'block' : 'none';
+        if(burgerOpenIcon) burgerOpenIcon.style.display = mobMenuOpen ? 'none' : '';
+        if(burgerCloseIconEl) burgerCloseIconEl.style.display = mobMenuOpen ? '' : 'none';
+      });
+    }
+
     window.addEventListener('scroll',function(){
       nav.classList.toggle('scrolled',window.scrollY>20);
       btt.classList.toggle('visible',window.scrollY>500);
