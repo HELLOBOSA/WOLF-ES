@@ -105,12 +105,15 @@ Nos comunicamos en español, inglés, sueco y griego.
 - https://wolfblanc.es/servicios/arquitectura-del-paisaje/
 - https://wolfblanc.es/servicios/urbanismo-masterplan/
 - https://wolfblanc.es/servicios/interiores-residenciales/
-- https://wolfblanc.es/servicios/estrategia-comercial/
+- https://wolfblanc.es/servicios/interiores-comerciales-hosteleria/
 - https://wolfblanc.es/servicios/visualizacion-arquitectonica/
 - https://wolfblanc.es/servicios/due-diligence-tecnica/
 - https://wolfblanc.es/servicios/consultoria-bim/
 - https://wolfblanc.es/servicios/bienestar-arquitectura/
 - https://wolfblanc.es/servicios/renovacion-integral-madrid/
+- https://wolfblanc.es/servicios/para-inversores/
+- https://wolfblanc.es/servicios/para-propietarios/
+- https://wolfblanc.es/servicios/villas-segunda-residencia/
 
 ## Journal
 
@@ -253,12 +256,15 @@ We communicate in Spanish, English, Swedish and Greek.
 - https://wolfblanc.es/servicios/arquitectura-del-paisaje/
 - https://wolfblanc.es/servicios/urbanismo-masterplan/
 - https://wolfblanc.es/servicios/interiores-residenciales/
-- https://wolfblanc.es/servicios/estrategia-comercial/
+- https://wolfblanc.es/servicios/interiores-comerciales-hosteleria/
 - https://wolfblanc.es/servicios/visualizacion-arquitectonica/
 - https://wolfblanc.es/servicios/due-diligence-tecnica/
 - https://wolfblanc.es/servicios/consultoria-bim/
 - https://wolfblanc.es/servicios/bienestar-arquitectura/
 - https://wolfblanc.es/servicios/renovacion-integral-madrid/
+- https://wolfblanc.es/servicios/para-inversores/
+- https://wolfblanc.es/servicios/para-propietarios/
+- https://wolfblanc.es/servicios/villas-segunda-residencia/
 
 ## Journal
 
