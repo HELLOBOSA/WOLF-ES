@@ -66,7 +66,7 @@ h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;line-height:1.15;letter-
 .cal-direct a{color:var(--accent)}
 #my-cal-inline-30min{width:100%;min-height:620px;overflow:auto;border:1px solid var(--line);margin-top:24px}
 #my-cal-inline-30min[hidden],.cal-placeholder[hidden]{display:none}
-.sp{margin-top:64px;padding-top:56px;border-top:1px solid var(--line)}
+.sp{margin-top:64px;padding-top:56px;border-top:1px solid var(--line);scroll-margin-top:64px}
 .intake-form{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);margin-top:24px}
 .field{display:flex;flex-direction:column;gap:8px;padding:20px 20px 20px 0;border-bottom:1px solid var(--line)}
 .intake-form .field:nth-child(2n){padding-left:20px;padding-right:0;border-left:1px solid var(--line)}
