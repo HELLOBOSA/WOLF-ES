@@ -217,8 +217,8 @@
     <div class="hero-grid"></div>
     <div class="hero-inner">
       <span class="eyebrow" data-es="CONTACTO · WOLFBLANC ESPAÑA" data-en="CONTACT · WOLFBLANC SPAIN">CONTACTO · WOLFBLANC ESPAÑA</span>
-      <h1 data-es="Hablemos de su proyecto" data-en="Let's talk about your project">Hablemos de su proyecto</h1>
-      <p class="lead" data-es="Un equipo en Madrid, Barcelona y Marbella. Un socio senior lee cada consulta y responde habitualmente en dos días laborables. Escríbanos, reserve una llamada o cuéntenos su proyecto mediante el formulario." data-en="One team in Madrid, Barcelona and Marbella. A senior partner reads every enquiry and usually replies within two working days. Email us, book a call, or tell us about your project using the form.">Un equipo en Madrid, Barcelona y Marbella. Un socio senior lee cada consulta y responde habitualmente en dos días laborables. Escríbanos, reserve una llamada o cuéntenos su proyecto mediante el formulario.</p>
+      <h1 data-es="Hablemos de tu proyecto" data-en="Let's talk about your project">Hablemos de tu proyecto</h1>
+      <p class="lead" data-es="Un equipo en Madrid, Barcelona y Marbella. Un socio senior lee cada consulta y responde habitualmente en dos días laborables. Escríbenos, reserva una llamada o cuéntanos tu proyecto mediante el formulario." data-en="One team in Madrid, Barcelona and Marbella. A senior partner reads every enquiry and usually replies within two working days. Email us, book a call, or tell us about your project using the form.">Un equipo en Madrid, Barcelona y Marbella. Un socio senior lee cada consulta y responde habitualmente en dos días laborables. Escríbenos, reserva una llamada o cuéntanos tu proyecto mediante el formulario.</p>
     </div>
   </header>
 
@@ -256,10 +256,10 @@
 
     <div class="cal-wrap">
       <div class="cal-inner">
-        <h3 data-es="Reserve una llamada" data-en="Book a call">Reserve una llamada</h3>
-        <p data-es="Elija un horario para una primera conversación de 30 minutos con un socio senior." data-en="Pick a time for a first 30-minute conversation with a senior partner.">Elija un horario para una primera conversación de 30 minutos con un socio senior.</p>
+        <h3 data-es="Reserva una llamada" data-en="Book a call">Reserva una llamada</h3>
+        <p data-es="Elige un horario para una primera conversación de 30 minutos con un socio senior." data-en="Pick a time for a first 30-minute conversation with a senior partner.">Elige un horario para una primera conversación de 30 minutos con un socio senior.</p>
         <div class="cal-placeholder" id="cal-placeholder">
-          <p data-es="El calendario se carga solo cuando usted lo solicita, protegiendo su privacidad." data-en="The calendar loads only when you request it, protecting your privacy.">El calendario se carga solo cuando usted lo solicita, protegiendo su privacidad.</p>
+          <p data-es="El calendario se carga solo cuando lo solicitas, protegiendo tu privacidad." data-en="The calendar loads only when you request it, protecting your privacy.">El calendario se carga solo cuando lo solicitas, protegiendo tu privacidad.</p>
           <button class="cal-load-btn" id="cal-load-btn" type="button" data-es="ABRIR CALENDARIO" data-en="OPEN BOOKING CALENDAR">ABRIR CALENDARIO</button>
           <p class="cal-direct"><span data-es="¿Prefiere escribir?" data-en="Prefer email?">¿Prefiere escribir?</span> <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
         </div>
@@ -271,7 +271,7 @@
       <div class="sp" id="proyecto">
         <h3 data-es="Cuéntanos tu proyecto" data-en="Tell us about your project">Cuéntanos tu proyecto</h3>
         <p style="margin-top:0;margin-bottom:32px" data-es='O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or write directly to <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>O escríbenos directamente a <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
-      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/15dfc9d97a2c" method="POST" data-lead-site="wolfblanc.es" data-lead-market="spain" data-lead-context="homepage_general_enquiry">
+      <form class="intake-form" id="intake-form" action="https://usebasin.com/f/15dfc9d97a2c" method="POST" accept-charset="UTF-8" data-lead-site="wolfblanc.es" data-lead-market="spain" data-lead-context="homepage_general_enquiry">
         <input type="hidden" name="_subject" value="Nuevo proyecto, wolfblanc.es">
         <input type="hidden" name="services" id="selected-services" value="">
         <div class="field"><label><span data-es="Nombre" data-en="Name">Nombre</span><span class="ix">01</span></label><input type="text" name="name" placeholder="María García" required></div>
@@ -284,6 +284,7 @@
           <p class="legal" data-es="Usamos esto únicamente para responder sobre tu proyecto." data-en="We use this only to respond about your project.">Usamos esto únicamente para responder sobre tu proyecto.</p>
           <button type="submit" class="submit" id="intake-submit"><span data-es="Enviar" data-en="Submit">Enviar</span><span class="arrow">→</span></button>
         </div>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
       </form>
       <div class="intake-confirmed" id="intake-confirmed" role="status" aria-live="polite">
         <h3 data-es="Gracias. Te responderemos en dos días laborables." data-en="Thank you. We'll be in touch within two working days.">Gracias. Te responderemos en dos días laborables.</h3>
@@ -417,7 +418,7 @@
           form.style.display='none';
           confirmed.style.display='block';
         }).catch(function(){
-          alert(H.lang==='en'?'We could not send your enquiry. Please email info@wolfblanc.com.':'No hemos podido enviar su consulta. Escriba a info@wolfblanc.com.');
+          alert(H.lang==='en'?'We could not send your enquiry. Please email info@wolfblanc.com.':'No hemos podido enviar tu consulta. Escríbenos a info@wolfblanc.com.');
           submit.disabled=false;
         });
       });
