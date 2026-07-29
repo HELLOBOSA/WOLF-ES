@@ -88,6 +88,7 @@ h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:200;line-height:1.15;letter-
 .consent-label a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 .form-actions{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;flex-wrap:wrap}
 .form-actions .legal{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text2);max-width:46ch}
+.form-actions .legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .submit{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;background:var(--text);color:var(--bg);padding:14px 24px;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;font-weight:400}
 .submit:hover{background:var(--accent)}
 .submit:disabled{opacity:.5}
