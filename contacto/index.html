@@ -384,8 +384,9 @@
   const langButtons = document.querySelectorAll('[data-lang-switch]');
   function setLanguage(lang){
     H.lang = lang;
-    document.querySelectorAll('[data-es][data-en]').forEach(el => {
-      el.innerHTML = el.dataset[lang];
+    document.querySelectorAll('[data-es],[data-en]').forEach(el => {
+      const val = el.dataset[lang];
+      if (val != null) el.innerHTML = val;
     });
     document.querySelectorAll('[data-es-placeholder][data-en-placeholder]').forEach(el => {
       el.placeholder = el.dataset[lang+'Placeholder'] || '';
