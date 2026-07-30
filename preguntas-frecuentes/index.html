@@ -322,7 +322,14 @@
       .cookie-copy,.cookie-actions{justify-content:center}
     }
   html{overflow-y:scroll}
-  </style>
+  
+/* Mobile readability floor. Interactive micro-type only: navigation and calls to action.
+   Desktop is unchanged, and the uppercase + letter-spacing treatment is untouched. */
+@media (max-width:700px){
+  .nav-link,.wb-go,.card-link,.fbtn,.pg-fbtn,.chip,.lang-btn,.pg-more-btn,.btn-ct,.btn-em{font-size:11px}
+  .cookie-btn,.cookie-link{font-size:11px}
+}
+</style>
 </head>
 <body>
 <nav id="nav">
