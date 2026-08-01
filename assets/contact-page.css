@@ -148,3 +148,7 @@ footer>span:nth-child(3){text-align:right}
   .cookie-copy,.cookie-actions{justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Contact blocks keep the shared type scale: phone and links at body size, the language line small. */
+.office-block .ph,.office-block .ph a{font-size:1rem}
+.office-block .lang{font-size:.65rem;letter-spacing:.16em;line-height:1.8}
