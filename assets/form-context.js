@@ -1,6 +1,5 @@
 (function(){
   var forms=document.querySelectorAll('form[data-lead-context]');
-  if(!forms.length)return;
 
   var utmKeys=['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
   var storageKey='wolfblanc-lead-context-v1';
@@ -96,6 +95,10 @@
   }
 
   captureJourney();
+
+  /* on a page with no form the journey is still recorded, so a visitor who
+     arrives on an article keeps their entry point and campaign tags */
+  if(!forms.length)return;
 
   forms.forEach(function(form){
     populate(form);
