@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <script>/* The cookie banner is switched off. Set this to true to require a choice again. */
-window.WB_CONSENT_ENABLED=false;</script>
+  <script>/* WB_BANNER_ENABLED: the cookie banner renders until a choice is stored.
+   WB_CONSENT_ENFORCED: tracking waits for that choice and obeys it. */
+window.WB_BANNER_ENABLED=true;window.WB_CONSENT_ENFORCED=false;</script>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex">
@@ -115,7 +116,7 @@ window.WB_CONSENT_ENABLED=false;</script>
   burger.addEventListener('click',function(){var visible=menu.style.display==='block';menu.style.display=visible?'none':'block';openIcon.style.display=visible?'':'none';closeIcon.style.display=visible?'none':''});
   window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',scrollY>20)},{passive:true});
   var key='wb-cookie-choice',raw=localStorage.getItem(key),valid=false;try{var saved=JSON.parse(raw);valid=saved&&saved.expires>Date.now()}catch(e){}
-  if(!valid)banner.hidden=(window.WB_CONSENT_ENABLED===false);banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){localStorage.setItem(key,JSON.stringify({choice:btn.getAttribute('data-cookie-choice'),expires:Date.now()+180*86400000}));banner.hidden=true})});
+  if(!valid)banner.hidden=(window.WB_BANNER_ENABLED===false);banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){localStorage.setItem(key,JSON.stringify({choice:btn.getAttribute('data-cookie-choice'),expires:Date.now()+180*86400000}));banner.hidden=true})});
 })();
 </script>
 </body>
