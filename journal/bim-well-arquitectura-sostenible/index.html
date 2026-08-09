@@ -19,6 +19,10 @@
   <script>
     (function(){
       var id='G-MREN7QTJ7G',key='wb-cookie-choice';
+      // The cookie banner is switched off. Set WB_CONSENT_ENABLED to true to
+      // require a choice again; the consent plumbing below stays wired for that.
+      window.WB_CONSENT_ENABLED=false;
+      function push(choice){var g=choice==='accept'?'granted':'denied';if(window.gtag)window.gtag('consent','update',{ad_storage:g,ad_user_data:g,ad_personalization:g,analytics_storage:g});}
       function consent(){
         try{
           var raw=localStorage.getItem(key);
@@ -33,6 +37,11 @@
         window.__wbAnalyticsLoaded=true;
         window.dataLayer=window.dataLayer||[];
         window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+        var granted=!window.WB_CONSENT_ENABLED||consent()==='accept';
+        var cg=granted?'granted':'denied';
+        var cd={ad_storage:cg,ad_user_data:cg,ad_personalization:cg,analytics_storage:cg,functionality_storage:'granted',security_storage:'granted'};
+        if(window.WB_CONSENT_ENABLED)cd.wait_for_update=500;
+        window.gtag('consent','default',cd);
         window.gtag('js',new Date());
         window.gtag('config',id,{
           anonymize_ip:true,
@@ -52,9 +61,9 @@
       document.addEventListener('click',function(e){
         var b=e.target.closest&&e.target.closest('[data-cookie-choice]');
         if(!b)return;
-        if(b.getAttribute('data-cookie-choice')==='accept')load();else clear();
+        if(b.getAttribute('data-cookie-choice')==='accept'){load();push('accept');}else{push('reject');clear();}
       },true);
-      if(consent()==='accept')load();
+      load();
     })();
   </script>
   <script type="application/ld+json">
@@ -480,7 +489,7 @@
     document.body.classList.remove('cookie-banner-visible');
   }
   setCookieLang(currentLang());
-  if(!readChoice()){banner.hidden=false;document.body.classList.add('cookie-banner-visible');}
+  if(!readChoice()){banner.hidden=(window.WB_CONSENT_ENABLED===false);document.body.classList.add('cookie-banner-visible');}
   banner.querySelectorAll('[data-cookie-choice]').forEach(function(btn){btn.addEventListener('click',function(){closeBanner(btn.getAttribute('data-cookie-choice'));});});
   document.querySelectorAll('[data-lang-switch]').forEach(function(btn){btn.addEventListener('click',function(){setCookieLang(btn.getAttribute('data-lang-switch'));});});
 })();
