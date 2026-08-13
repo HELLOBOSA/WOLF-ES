@@ -399,6 +399,7 @@
       if(val!==null)el.innerHTML=val;
     });
     lbs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang-switch')===lang);});
+    root.setAttribute('lang',lang);
     localStorage.setItem(LS_LANG,lang);
   }
   var initLang=localStorage.getItem(LS_LANG)||'es';
